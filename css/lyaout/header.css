@@ -43,7 +43,7 @@
 
 .voice .voice-item{
     text-align: center;
-    background-color: #efefef;
+   /*  background-color: #efefef; */
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -58,22 +58,20 @@
    
 }
 
+.voice-item .voice-info{
+    margin-top: 10px;
+}
 
-
-.voice .voice-item .voice-title{
+/* .voice .voice-item .voice-title{
     font-size: 18px;
     font-weight: 400; 
     margin-top: 15px;
     margin-bottom: 10px;
     display: inline-block;
-}
+} */
 
-.voice .voice-item .voice-title:hover{
-    font-weight: 500;
-    color: #ff3c20;
-    
-   
-}
+
+
 
 
 
