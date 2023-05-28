@@ -5,6 +5,17 @@ var btn4  = document.querySelector("#btn4")
 var btn5  = document.querySelector("#btn5")
 var sayitut=document.querySelector("#sayitut")
 var audio=[btn1_sesi,btn1_sesi,btn1_sesi,btn4_sesi,btn1_sesi]
+
+
+
+btn_baslangic.onclick = function(){
+    var sayi=Number(sayitut.innerHTML)
+    sayitut.innerHTML=++sayi
+    console.log(sayi)
+    btn_başlangic_sesi.play()
+    
+}
+
 btn1.onclick = function(){
     var sayi=Number(sayitut.innerHTML)
     sayitut.innerHTML=++sayi
@@ -25,7 +36,7 @@ btn3.onclick = function(){
     var sayi=Number(sayitut.innerHTML)
     sayitut.innerHTML=++sayi
     console.log(sayi)
-    btn4_sesi.play()
+    btn3_sesi.play()
 }
 
 
@@ -41,6 +52,6 @@ btn5.onclick = function(){
     var sayi=Number(sayitut.innerHTML)
     sayitut.innerHTML=++sayi
     console.log(sayi)
-    btn4_sesi.play()
+    btn5_sesi.play()
 }
 
