@@ -3,8 +3,8 @@
   {type:"item1", name:"Sate sate sate" , img:"resim/meliodas.jpg" , id:"btn1" },
   {type:"item2", name:"tatakae tatakae" , img:"resim/eren.jpg" , id:"btn2"},
   {type:"item3", name:"nee sama", img:"resim/rem.jpg" , id:"btn3"},
-  {type:"item4", name:"gambare gambare", img:"resim/sukuna.jpg", id:"btn4"}, 
-  {type:"item5", name:"okawai koto", img:"resim/kaguya-sama.jpg" , id:"btn5"},
+  {type:"item4", name:"gambare gambare", img:"resim/sukuna01.jpg", id:"btn4"}, 
+  {type:"item5", name:"okawai koto", img:"resim/kaguya03.jpg" , id:"btn5"},
 
 ];
 //! JHSON bitti
@@ -14,8 +14,8 @@
       {type:"item1", name:"Sate sate sate" , img:"resim/meliodas.jpg" , id:"btn1" },
       {type:"item2", name:"tatakae tatakae" , img:"resim/eren.jpg" , id:"btn2"},
       {type:"item3", name:"nee sama", img:"resim/rem.jpg" , id:"btn3"},
-      {type:"item4", name:"gambare gambare", img:"resim/sukuna.jpg", id:"btn4"}, 
-      {type:"item5", name:"okawai koto", img:"resim/kaguya-sama.jpg" , id:"btn5"},
+      {type:"item4", name:"gambare gambare", img:"resim/sukuna01.jpg", id:"btn4"}, 
+      {type:"item5", name:"okawai koto", img:"resim/kaguya03.jpg" , id:"btn5"},
     
     ];
     
