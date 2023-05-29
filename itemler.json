@@ -1,0 +1,21 @@
+[
+    {
+        "id": "btn1",
+        "name": "sate sate sate",
+        "img": {
+            "singleImage": "resim/meliodas.jpg"
+           
+        }
+    },
+
+    {
+        "id": "btn3",
+        "name": "nee sama",
+        "img": {
+            "singleImage": "resim/rem.jpg"
+           
+        }
+    }
+
+
+]
