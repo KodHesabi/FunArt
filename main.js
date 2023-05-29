@@ -1,9 +1,9 @@
 //! JHSON yazıldı
  var itemler= [
   {type:"item1", name:"Sate sate sate" , img:"resim/meliodas.jpg" , id:"btn1" },
-  //{id:"item2", name:"Sate sate sate"},
+  {type:"item2", name:"tatakae tatakae" , img:"resim/eren.jpg" , id:"btn2"},
   {type:"item3", name:"nee sama", img:"resim/rem.jpg" , id:"btn3"},
- // {id:"item4", name:"Sate sate sate"}, 
+  {type:"item4", name:"gambare gambare", img:"resim/sukuna.jpg", id:"btn4"}, 
   {type:"item5", name:"okawai koto", img:"resim/kaguya-sama.jpg" , id:"btn5"},
 
 ];
@@ -11,11 +11,11 @@
 
  function searchFunc(itemler){
     var itemler= [
-        {type:"item1", name:"Sate sate sate" , img:"resim/meliodas.jpg" , id:"btn1" },
-        //{id:"item2", name:"Sate sate sate"},
-        {type:"item3", name:"nee sama", img:"resim/rem.jpg" , id:"btn3"},
-       // {id:"item4", name:"Sate sate sate"}, 
-        {type:"item5", name:"okawai koto", img:"resim/kaguya-sama.jpg" , id:"btn5"},
+      {type:"item1", name:"Sate sate sate" , img:"resim/meliodas.jpg" , id:"btn1" },
+      {type:"item2", name:"tatakae tatakae" , img:"resim/eren.jpg" , id:"btn2"},
+      {type:"item3", name:"nee sama", img:"resim/rem.jpg" , id:"btn3"},
+      {type:"item4", name:"gambare gambare", img:"resim/sukuna.jpg", id:"btn4"}, 
+      {type:"item5", name:"okawai koto", img:"resim/kaguya-sama.jpg" , id:"btn5"},
     
     ];
     
@@ -83,9 +83,9 @@ searchInputDOM.addEventListener("input", (e) => {
 
   
   var btn1 = document.querySelector("#btn1")
-
+  var btn2  = document.querySelector("#btn2")
   var btn3  = document.querySelector("#btn3")
-
+  var btn4  = document.querySelector("#btn4")
   var btn5  = document.querySelector("#btn5")
   var sayitut=document.querySelector("#sayitut")
   
