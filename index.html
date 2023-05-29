@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+    
+
     <!--! Sesler -->
     <audio id="btn_başlangic_sesi">
       <source src="audio/Uwu Message.mp3">
@@ -38,9 +40,14 @@
     <audio id="btn5_sesi">
       <source src="audio/o_kawaii_koto_kaguya.mp3">
     </audio>
+
+
     <!--! Sesler Bitiş -->
 
+
+
     <!--! Hedaer Başlangıç -->
+
     <!--! Karekterler Başlangıc -->
     <section class="voice">
       <div class="container">
@@ -56,7 +63,7 @@
           <!--! voice search start  -->
           <div class="voice-search">
               <form class="search-form">
-                <input type="text" placeholder="Henüz çalışmıyor kullanmayın" />
+                <input id="searchInput" type="text" placeholder="Henüz çalışmıyor kullanmayın" />
                 <button>
                   <i class="bi bi-search"></i>
                 </button>
@@ -66,7 +73,7 @@
           </div>
           <!--! voice search end  -->
           <ul class="voice-list">
-            <li class="voice-item">
+            <li class="voice-item" id="item1">
               <div class="voice-image">
                 <a href="#">
                   <img src="resim/meliodas.jpg" alt="" class="img1" />
@@ -77,7 +84,7 @@
               </div>
             </li>
 
-            <li class="voice-item">
+           <!--  <li class="voice-item" id="item2">
               <div class="voice-image">
                 <a href="#">
                   <img src="resim/eren.jpg" alt="" class="img1" />
@@ -86,9 +93,9 @@
               <div class="voice-info">
                 <button id="btn2" class="btn btn-primary">tatakae tatakae</button>
               </div>
-            </li>
+            </li> -->
 
-            <li class="voice-item">
+            <li class="voice-item" id="item3">
               <div class="voice-image">
                 <a href="#">
                   <img src="resim/rem.jpg" alt="" class="img1" />
@@ -99,16 +106,16 @@
               </div>
             </li>
 
-            <li class="voice-item">
+            <!-- <li class="voice-item" id="item4">
               <div class="voice-image">
                 <img src="resim/sukuna.jpg" alt="" class="img1" />
               </div>
               <div class="voice-info">
                 <button id="btn4" class="btn btn-primary" onclick="ses_cal(this)">gambare gambare</button>
               </div>
-            </li>
+            </li> -->
 
-            <li class="voice-item">
+            <li class="voice-item" id="item5">
               <div class="voice-image">
                 <img src="resim/kaguya-sama.jpg" alt="" class="img1" />
               </div>
@@ -122,7 +129,21 @@
       </div>
     </section>
     <!--! karekterler Bitiş -->
+
     <!--! Hedaer Bitiş -->
+
+
+    <!--? Footer başlangıç -->
+    <section class="footer">
+      <div class="container">
+
+      </div>
+    </section>
+
+    <!--? Footer Bitiş -->
+
+
+    
     <script src="main.js"></script>
   </body>
 </html>
