@@ -97,12 +97,27 @@ searchInputDOM.addEventListener("input", (e) => {
     btn1_sesi.play()
   } 
 
+  btn2.onclick = function(){
+    var sayi=Number(sayitut.innerHTML)
+    sayitut.innerHTML=++sayi
+    console.log(sayi)
+    btn2_sesi.play()
+} 
+
   btn3.onclick = function(){
     var sayi=Number(sayitut.innerHTML)
     sayitut.innerHTML=++sayi
     console.log(sayi)
     btn3_sesi.play()
 }  
+
+  btn4.onclick = function(){
+    var sayi=Number(sayitut.innerHTML)
+    sayitut.innerHTML=++sayi
+    console.log(sayi)
+    btn4_sesi.play()
+  }
+
 
   btn5.onclick = function(){
     var sayi=Number(sayitut.innerHTML)
@@ -146,12 +161,12 @@ btn1.onclick = function(){
 }
 
 
-/* btn2.onclick = function(){
+btn2.onclick = function(){
     var sayi=Number(sayitut.innerHTML)
     sayitut.innerHTML=++sayi
     console.log(sayi)
     btn2_sesi.play()
-} */
+} 
 
 
 btn3.onclick = function(){
@@ -162,13 +177,13 @@ btn3.onclick = function(){
 } 
 
 
-/* btn4.onclick = function(){
+ btn4.onclick = function(){
     var sayi=Number(sayitut.innerHTML)
     sayitut.innerHTML=++sayi
     console.log(sayi)
     btn4_sesi.play()
 }
- */
+ 
 
  btn5.onclick = function(){
     var sayi=Number(sayitut.innerHTML)
