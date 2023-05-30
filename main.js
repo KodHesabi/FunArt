@@ -8,7 +8,8 @@
   {type:"item6", name:"yare yare", img:"resim/gojo-maceraları.jpg", id:"btn6"},
   {type:"item7", name:"tabii efendim!", img:"resim/spiderman.jpg" , id:"btn7"},
   {type:"item8", name:"ara sayanoraa", img:"resim/ara-sayanora.jpg" , id:"btn8"},
-  {type:"item9", name:"ara araa", img:"resim/akeno-ara.jpg" , id:"btn9"},
+  {type:"item9", name:"ara araa", img:"resim/akeno-ara2.jpg" , id:"btn9"},
+  {type:"item10", name:"ho mete yaro", img:"resim/sukuna2.jpg" , id:"btn10"},
 
 ];
 //! JHSON bitti
@@ -23,7 +24,8 @@
       {type:"item6", name:"yare yare", img:"resim/gojo-maceraları.jpg" , id:"btn6"},
       {type:"item7", name:"tabii efendim!", img:"resim/spiderman.jpg" , id:"btn7"},
       {type:"item8", name:"ara sayanoraa", img:"resim/ara-sayanora.jpg" , id:"btn8"},
-      {type:"item9", name:"ara araa", img:"resim/akeno-ara.jpg" , id:"btn9"},
+      {type:"item9", name:"ara araa", img:"resim/akeno-ara2.jpg" , id:"btn9"},
+      {type:"item10", name:"ho mete yaro", img:"resim/sukuna2.jpg" , id:"btn10"},
       
     
     ];
@@ -99,6 +101,7 @@ searchInputDOM.addEventListener("input", (e) => {
   var btn7  = document.querySelector("#btn7")
   var btn8  = document.querySelector("#btn8")
   var btn9  = document.querySelector("#btn9")
+  var btn9  = document.querySelector("#btn10")
   
   
   if(btn1!=null){
@@ -197,6 +200,16 @@ if(btn4!=null){
     
   }
 
+  if(btn10!=null){
+    btn10.onclick = function(){
+      var sayi=Number(sayitut.innerHTML)
+      sayitut.innerHTML=++sayi
+      console.log(sayi)
+      btn10_sesi.play()
+    }
+    
+  }
+
   
  
 }) 
@@ -215,6 +228,7 @@ var btn6  = document.querySelector("#btn6")
 var btn7  = document.querySelector("#btn7")
 var btn8  = document.querySelector("#btn8")
 var btn9  = document.querySelector("#btn9")
+var btn9  = document.querySelector("#btn10")
 var sayitut=document.querySelector("#sayitut")
 
 
@@ -294,6 +308,13 @@ btn3.onclick = function(){
     sayitut.innerHTML=++sayi
     console.log(sayi)
     btn9_sesi.play()
+  }
+
+  btn10.onclick = function(){
+    var sayi=Number(sayitut.innerHTML)
+    sayitut.innerHTML=++sayi
+    console.log(sayi)
+    btn10_sesi.play()
   }
 
 
