@@ -29,9 +29,9 @@
         result+=`
         <li class = "voice-item" type = ${item.type} >
         <div class="voice-image">
-          <a href="#">
-            <img src = ${item.img} alt="" class="search-img"/>
-          </a>
+          
+          <img src = ${item.img} alt="" class="search-img"/>
+          
         </div>
         <div class="voice-info">
           <button id= ${item.id} class="btn btn-primary"  name=${item.name} >${item.name} </button>
@@ -66,9 +66,9 @@ searchInputDOM.addEventListener("input", (e) => {
     result+=`
     <li class = "voice-item" type = ${item.type} >
     <div class="voice-image">
-      <a href="#">
-        <img src = ${item.img} alt="" class="item-image"/>
-      </a>
+      
+      <img src = ${item.img} alt="" class="item-image"/>
+      
     </div>
     <div class="voice-info">
       <button id= ${item.id} class="btn btn-primary"  name=${item.name} >${item.name} </button>
