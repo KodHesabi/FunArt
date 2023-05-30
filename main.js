@@ -6,6 +6,7 @@
   {type:"item4", name:"gambare gambare", img:"resim/sukuna01.jpg", id:"btn4"}, 
   {type:"item5", name:"okawai koto", img:"resim/kaguya03.jpg" , id:"btn5"},
   {type:"item6", name:"yare yare", img:"resim/yare-yare-gojo.jpg" , id:"btn6"},
+  {type:"item7", name:"tabii efendim!", img:"resim/spiderman.jpg" , id:"btn7"},
 
 ];
 //! JHSON bitti
@@ -18,6 +19,7 @@
       {type:"item4", name:"gambare gambare", img:"resim/sukuna01.jpg", id:"btn4"}, 
       {type:"item5", name:"okawai koto", img:"resim/kaguya03.jpg" , id:"btn5"},
       {type:"item6", name:"yare yare", img:"resim/yare-yare-gojo.jpg" , id:"btn6"},
+      {type:"item7", name:"tabii efendim!", img:"resim/spiderman.jpg" , id:"btn7"},
     
     ];
     
@@ -74,7 +76,6 @@ searchInputDOM.addEventListener("input", (e) => {
   </li>
     `;
        
-
       
   });
    searchWrapperDOM.innerHTML =  result;
@@ -90,6 +91,7 @@ searchInputDOM.addEventListener("input", (e) => {
   var btn4  = document.querySelector("#btn4")
   var btn5  = document.querySelector("#btn5")
   var btn6  = document.querySelector("#btn6")
+  var btn7  = document.querySelector("#btn7")
   var sayitut=document.querySelector("#sayitut")
   
 
@@ -129,13 +131,19 @@ searchInputDOM.addEventListener("input", (e) => {
     btn5_sesi.play()
  } 
 
- btn6.onclick = function(){
-  var sayi=Number(sayitut.innerHTML)
-  sayitut.innerHTML=++sayi
-  console.log(sayi)
-  btn6_sesi.play()
-} 
+   btn6.onclick = function(){
+    var sayi=Number(sayitut.innerHTML)
+    sayitut.innerHTML=++sayi
+    console.log(sayi)
+    btn6_sesi.play()
+  } 
 
+  btn7.onclick = function(){
+    var sayi=Number(sayitut.innerHTML)
+    sayitut.innerHTML=++sayi
+    console.log(sayi)
+    btn7_sesi.play()
+  }
  
 }) 
 
@@ -150,6 +158,7 @@ var btn3  = document.querySelector("#btn3")
 var btn4  = document.querySelector("#btn4")
 var btn5  = document.querySelector("#btn5")
 var btn6  = document.querySelector("#btn6")
+var btn7  = document.querySelector("#btn7")
 var sayitut=document.querySelector("#sayitut")
 
 
@@ -196,19 +205,26 @@ btn3.onclick = function(){
 }
  
 
- btn5.onclick = function(){
+  btn5.onclick = function(){
     var sayi=Number(sayitut.innerHTML)
     sayitut.innerHTML=++sayi
     console.log(sayi)
     btn5_sesi.play()
-}
+  }
 
-btn6.onclick = function(){
-  var sayi=Number(sayitut.innerHTML)
-  sayitut.innerHTML=++sayi
-  console.log(sayi)
-  btn6_sesi.play()
-} 
+  btn6.onclick = function(){
+    var sayi=Number(sayitut.innerHTML)
+    sayitut.innerHTML=++sayi
+    console.log(sayi)
+    btn6_sesi.play()
+  }
+
+  btn7.onclick = function(){
+    var sayi=Number(sayitut.innerHTML)
+    sayitut.innerHTML=++sayi
+    console.log(sayi)
+    btn7_sesi.play()
+  }
 
 
 
