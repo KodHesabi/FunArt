@@ -101,7 +101,7 @@ searchInputDOM.addEventListener("input", (e) => {
   var btn7  = document.querySelector("#btn7")
   var btn8  = document.querySelector("#btn8")
   var btn9  = document.querySelector("#btn9")
-  var btn9  = document.querySelector("#btn10")
+  var btn10  = document.querySelector("#btn10")
   
   
   if(btn1!=null){
@@ -228,7 +228,7 @@ var btn6  = document.querySelector("#btn6")
 var btn7  = document.querySelector("#btn7")
 var btn8  = document.querySelector("#btn8")
 var btn9  = document.querySelector("#btn9")
-var btn9  = document.querySelector("#btn10")
+var btn10  = document.querySelector("#btn10")
 var sayitut=document.querySelector("#sayitut")
 
 
@@ -310,12 +310,12 @@ btn3.onclick = function(){
     btn9_sesi.play()
   }
 
-  btn10.onclick = function(){
+   btn10.onclick = function(){
     var sayi=Number(sayitut.innerHTML)
     sayitut.innerHTML=++sayi
     console.log(sayi)
     btn10_sesi.play()
-  }
+  } 
 
 
 
