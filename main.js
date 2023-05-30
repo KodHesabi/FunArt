@@ -7,6 +7,8 @@
   {type:"item5", name:"okawai koto", img:"resim/kaguya03.jpg" , id:"btn5"},
   {type:"item6", name:"yare yare", img:"resim/gojo-maceraları.jpg", id:"btn6"},
   {type:"item7", name:"tabii efendim!", img:"resim/spiderman.jpg" , id:"btn7"},
+  {type:"item8", name:"ara sayanoraa", img:"resim/ara-sayanora.jpg" , id:"btn8"},
+  {type:"item9", name:"ara araa", img:"resim/akeno-ara.jpg" , id:"btn9"},
 
 ];
 //! JHSON bitti
@@ -20,6 +22,9 @@
       {type:"item5", name:"okawai koto", img:"resim/kaguya03.jpg" , id:"btn5"},
       {type:"item6", name:"yare yare", img:"resim/gojo-maceraları.jpg" , id:"btn6"},
       {type:"item7", name:"tabii efendim!", img:"resim/spiderman.jpg" , id:"btn7"},
+      {type:"item8", name:"ara sayanoraa", img:"resim/ara-sayanora.jpg" , id:"btn8"},
+      {type:"item9", name:"ara araa", img:"resim/akeno-ara.jpg" , id:"btn9"},
+      
     
     ];
     
@@ -92,6 +97,8 @@ searchInputDOM.addEventListener("input", (e) => {
   var btn5  = document.querySelector("#btn5")
   var btn6  = document.querySelector("#btn6")
   var btn7  = document.querySelector("#btn7")
+  var btn8  = document.querySelector("#btn8")
+  var btn9  = document.querySelector("#btn9")
   
   
   if(btn1!=null){
@@ -170,6 +177,26 @@ if(btn4!=null){
     
   }
 
+  if(btn8!=null){
+    btn8.onclick = function(){
+      var sayi=Number(sayitut.innerHTML)
+      sayitut.innerHTML=++sayi
+      console.log(sayi)
+      btn8_sesi.play()
+    }
+    
+  }
+
+  if(btn9!=null){
+    btn9.onclick = function(){
+      var sayi=Number(sayitut.innerHTML)
+      sayitut.innerHTML=++sayi
+      console.log(sayi)
+      btn9_sesi.play()
+    }
+    
+  }
+
   
  
 }) 
@@ -186,6 +213,8 @@ var btn4  = document.querySelector("#btn4")
 var btn5  = document.querySelector("#btn5")
 var btn6  = document.querySelector("#btn6")
 var btn7  = document.querySelector("#btn7")
+var btn8  = document.querySelector("#btn8")
+var btn9  = document.querySelector("#btn9")
 var sayitut=document.querySelector("#sayitut")
 
 
@@ -251,6 +280,20 @@ btn3.onclick = function(){
     sayitut.innerHTML=++sayi
     console.log(sayi)
     btn7_sesi.play()
+  }
+
+  btn8.onclick = function(){
+    var sayi=Number(sayitut.innerHTML)
+    sayitut.innerHTML=++sayi
+    console.log(sayi)
+    btn8_sesi.play()
+  }
+
+  btn9.onclick = function(){
+    var sayi=Number(sayitut.innerHTML)
+    sayitut.innerHTML=++sayi
+    console.log(sayi)
+    btn9_sesi.play()
   }
 
 
