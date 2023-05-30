@@ -5,7 +5,7 @@
   {type:"item3", name:"nee sama", img:"resim/rem.jpg" , id:"btn3"},
   {type:"item4", name:"gambare gambare", img:"resim/sukuna01.jpg", id:"btn4"}, 
   {type:"item5", name:"okawai koto", img:"resim/kaguya03.jpg" , id:"btn5"},
-  {type:"item6", name:"yare yare", img:"resim/yare-yare-gojo.jpg" , id:"btn6"},
+  {type:"item6", name:"yare yare", img:"resim/gojo-maceraları.jpg", id:"btn6"},
   {type:"item7", name:"tabii efendim!", img:"resim/spiderman.jpg" , id:"btn7"},
 
 ];
@@ -18,7 +18,7 @@
       {type:"item3", name:"nee sama", img:"resim/rem.jpg" , id:"btn3"},
       {type:"item4", name:"gambare gambare", img:"resim/sukuna01.jpg", id:"btn4"}, 
       {type:"item5", name:"okawai koto", img:"resim/kaguya03.jpg" , id:"btn5"},
-      {type:"item6", name:"yare yare", img:"resim/yare-yare-gojo.jpg" , id:"btn6"},
+      {type:"item6", name:"yare yare", img:"resim/gojo-maceraları.jpg" , id:"btn6"},
       {type:"item7", name:"tabii efendim!", img:"resim/spiderman.jpg" , id:"btn7"},
     
     ];
@@ -92,58 +92,85 @@ searchInputDOM.addEventListener("input", (e) => {
   var btn5  = document.querySelector("#btn5")
   var btn6  = document.querySelector("#btn6")
   var btn7  = document.querySelector("#btn7")
-  var sayitut=document.querySelector("#sayitut")
   
-
-  btn1.onclick = function(){
-    var sayi=Number(sayitut.innerHTML)
-    sayitut.innerHTML=++sayi
-    console.log(sayi)
-    btn1_sesi.play()
+  
+  if(btn1!=null){
+    btn1.onclick = function(){
+      var sayi=Number(sayitut.innerHTML)
+      sayitut.innerHTML=++sayi
+      console.log(sayi)
+      btn1_sesi.play()
+    } 
+    
+  }
+  
+  if(btn2!=null){
+    btn2.onclick = function(){
+      var sayi=Number(sayitut.innerHTML)
+      sayitut.innerHTML=++sayi
+      console.log(sayi)
+      btn2_sesi.play()
   } 
 
-  btn2.onclick = function(){
-    var sayi=Number(sayitut.innerHTML)
-    sayitut.innerHTML=++sayi
-    console.log(sayi)
-    btn2_sesi.play()
-} 
+ }
 
-  btn3.onclick = function(){
-    var sayi=Number(sayitut.innerHTML)
-    sayitut.innerHTML=++sayi
-    console.log(sayi)
-    btn3_sesi.play()
-}  
+   if(btn3!=null){
 
+    btn3.onclick = function(){
+      var sayi=Number(sayitut.innerHTML)
+      sayitut.innerHTML=++sayi
+      console.log(sayi)
+      btn3_sesi.play()
+  }
+
+   }
+    
+
+if(btn4!=null){
   btn4.onclick = function(){
     var sayi=Number(sayitut.innerHTML)
     sayitut.innerHTML=++sayi
     console.log(sayi)
     btn4_sesi.play()
   }
+    
+}
+  
 
+  if(btn5!=null){
 
-  btn5.onclick = function(){
-    var sayi=Number(sayitut.innerHTML)
-    sayitut.innerHTML=++sayi
-    console.log(sayi)
-    btn5_sesi.play()
- } 
+    btn5.onclick = function(){
+      var sayi=Number(sayitut.innerHTML)
+      sayitut.innerHTML=++sayi
+      console.log(sayi)
+      btn5_sesi.play()
+   } 
+    
+  }
 
-   btn6.onclick = function(){
+  
+ if(btn6!=null){
+  btn6.onclick = function(){
     var sayi=Number(sayitut.innerHTML)
     sayitut.innerHTML=++sayi
     console.log(sayi)
     btn6_sesi.play()
   } 
+    
+ }
 
-  btn7.onclick = function(){
-    var sayi=Number(sayitut.innerHTML)
-    sayitut.innerHTML=++sayi
-    console.log(sayi)
-    btn7_sesi.play()
+
+  if(btn7!=null){
+    btn7.onclick = function(){
+      var sayi=Number(sayitut.innerHTML)
+      sayitut.innerHTML=++sayi
+      console.log(sayi)
+      btn7_sesi.play()
+    }
+    
   }
+
+  
  
 }) 
 
