@@ -1,5 +1,5 @@
 //! JHSON yazıldı
-  var itemler= [
+   var itemler= [
   {type:"item1", name:"Sate sate sate" , img:"resim/meliodas.jpg" , id:"btn1" },
   {type:"item2", name:"tatakae tatakae" , img:"resim/eren.jpg" , id:"btn2"},
   {type:"item3", name:"nee sama", img:"resim/rem.jpg" , id:"btn3"},
@@ -12,13 +12,14 @@
   {type:"item10", name:"ho mete yaro", img:"resim/sukuna2.jpg" , id:"btn10"},
   {type:"item11", name:"omae wa mou shindeiru", img:"resim/omae-wa.jpg", id:"btn11"},
   {type:"item12", name:"naniii", img:"resim/nani.jpg" , id:"btn12"},
+  {type:"item13", name:"ayayaa ayayaa", img:"resim/ayaya-ayaya.jpg" , id:"btn13"},
 
 
 ]; 
 //! JHSON bitti
 
- function searchFunc(itemler){
-    var itemler= [
+/*  function searchFunc(itemler){
+     var itemler= [
       {type:"item1", name:"Sate sate sate" , img:"resim/meliodas.jpg" , id:"btn1" },
       {type:"item2", name:"tatakae tatakae" , img:"resim/eren.jpg" , id:"btn2"},
       {type:"item3", name:"nee sama", img:"resim/rem.jpg" , id:"btn3"},
@@ -31,9 +32,10 @@
       {type:"item10", name:"ho mete yaro", img:"resim/sukuna2.jpg" , id:"btn10"},
       {type:"item11", name:"omae wa mou shindeiru", img:"resim/omae-wa.jpg" , id:"btn11"},
       {type:"item12", name:"naniii", img:"resim/nani.jpg" , id:"btn12"},
+      {type:"item13", name:"ayayaa ayayaa", img:"resim/ayaya-yeah.gif" , id:"btn13"},
       
     
-    ];
+    ]; 
     
     const searchWrapperDOM =  document.querySelector(".voice-wrapper .voice-list")
     let result= " "
@@ -57,8 +59,8 @@
 
     
   
-}
-searchFunc() 
+} */
+/* searchFunc()  */
 //! Search Başlangıc
 const searchInputDOM = document.querySelector("#searchInput")
 let value= " ";
@@ -79,7 +81,7 @@ searchInputDOM.addEventListener("input", (e) => {
     <li class = "voice-item" type = ${item.type} >
     <div class="voice-image">
       
-      <img src = ${item.img} alt="" class="item-image"/>
+      <img src = ${item.img} alt="" />
       
     </div>
     <div class="voice-info">
@@ -109,6 +111,12 @@ searchInputDOM.addEventListener("input", (e) => {
   var btn10  = document.querySelector("#btn10")
   var btn11  = document.querySelector("#btn11")
   var btn12  = document.querySelector("#btn12")
+  var btn13  = document.querySelector("#btn13")
+  var img1 = document.querySelector(".item.img")
+  var img2 = document.querySelector(".img2")
+  console.log(img1)
+  console.log(img2)
+
   
   
   if(btn1!=null){
@@ -237,6 +245,20 @@ if(btn4!=null){
     
   }
 
+  if(btn13!=null){
+    btn13.onclick = function(){
+      console.log(img1)
+      img1=img2
+      console.log(img1)
+      img="resim/ayaya-yeah.gif"
+      var sayi=Number(sayitut.innerHTML)
+      sayitut.innerHTML=++sayi
+      console.log(sayi)
+      btn13_sesi.play()
+    }
+    
+  }
+
   
  
 }) 
@@ -258,6 +280,10 @@ var btn9  = document.querySelector("#btn9")
 var btn10  = document.querySelector("#btn10")
 var btn11  = document.querySelector("#btn11")
 var btn12  = document.querySelector("#btn12")
+var btn13  = document.querySelector("#btn13")
+var img1 = document.querySelector(".img1")
+var img2 = document.querySelector(".img2")
+
 var sayitut=document.querySelector("#sayitut")
 
 
@@ -358,6 +384,15 @@ btn3.onclick = function(){
     sayitut.innerHTML=++sayi
     console.log(sayi)
     btn12_sesi.play()
+  } 
+
+  btn13.onclick = function(){
+    img1=img2
+    console.log(img1)
+    var sayi=Number(sayitut.innerHTML)
+    sayitut.innerHTML=++sayi
+    console.log(sayi)
+    btn13_sesi.play()
   } 
 
 
