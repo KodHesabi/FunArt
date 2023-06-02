@@ -13,6 +13,7 @@
   {type:"item11", name:"omae wa mou shindeiru", img:"resim/omae-wa.jpg", id:"btn11"},
   {type:"item12", name:"naniii", img:"resim/nani.jpg" , id:"btn12"},
   {type:"item13", name:"ayayaa ayayaa", img:"resim/ayaya-ayaya.jpg" , id:"btn13"},
+  {type:"item14", name:"moshi moshii", img:"resim/moshi-moshi.jpg" , id:"btn14"},
 
 
 ]; 
@@ -112,6 +113,7 @@ searchInputDOM.addEventListener("input", (e) => {
   var btn11  = document.querySelector("#btn11")
   var btn12  = document.querySelector("#btn12")
   var btn13  = document.querySelector("#btn13")
+  const btn14 = document.querySelector("#btn14");
  
 
   
@@ -252,6 +254,20 @@ if(btn4!=null){
     
   }
 
+  if(btn14!=null){
+    btn14.addEventListener('click', (e) => {
+
+      var sayi=Number(sayitut.innerHTML)
+      sayitut.innerHTML=++sayi
+      console.log(sayi)
+      btn14_sesi.play()
+      e.preventDefault()
+  
+    
+    })
+    
+  }
+
   
  
 }) 
@@ -274,6 +290,8 @@ var btn10  = document.querySelector("#btn10")
 var btn11  = document.querySelector("#btn11")
 var btn12  = document.querySelector("#btn12")
 var btn13  = document.querySelector("#btn13")
+
+const btn14 = document.querySelector("#btn14");
 
 var sayitut=document.querySelector("#sayitut")
 
@@ -326,6 +344,11 @@ btn3.onclick = function(){
     sayitut.innerHTML=++sayi
     console.log(sayi)
     btn5_sesi.play()
+   
+    
+    
+      
+    
   }
 
   btn6.onclick = function(){
@@ -384,6 +407,16 @@ btn3.onclick = function(){
     btn13_sesi.play()
   } 
 
+  btn14.addEventListener('click', (e) => {
+
+    var sayi=Number(sayitut.innerHTML)
+    sayitut.innerHTML=++sayi
+    console.log(sayi)
+    btn14_sesi.play()
+    e.preventDefault()
+
+  
+  })
 
 
 
