@@ -1,5 +1,5 @@
 //! JHSON yazıldı
- var itemler= [
+  var itemler= [
   {type:"item1", name:"Sate sate sate" , img:"resim/meliodas.jpg" , id:"btn1" },
   {type:"item2", name:"tatakae tatakae" , img:"resim/eren.jpg" , id:"btn2"},
   {type:"item3", name:"nee sama", img:"resim/rem.jpg" , id:"btn3"},
@@ -10,8 +10,11 @@
   {type:"item8", name:"ara sayanoraa", img:"resim/ara-sayanora.jpg" , id:"btn8"},
   {type:"item9", name:"ara araa", img:"resim/akeno-ara2.jpg" , id:"btn9"},
   {type:"item10", name:"ho mete yaro", img:"resim/sukuna2.jpg" , id:"btn10"},
+  {type:"item11", name:"omae wa mou shindeiru", img:"resim/omae-wa.jpg", id:"btn11"},
+  {type:"item12", name:"nanii", img:"resim/nani.jpg" , id:"btn12"},
 
-];
+
+]; 
 //! JHSON bitti
 
  function searchFunc(itemler){
@@ -26,6 +29,8 @@
       {type:"item8", name:"ara sayanoraa", img:"resim/ara-sayanora.jpg" , id:"btn8"},
       {type:"item9", name:"ara araa", img:"resim/akeno-ara2.jpg" , id:"btn9"},
       {type:"item10", name:"ho mete yaro", img:"resim/sukuna2.jpg" , id:"btn10"},
+      {type:"item11", name:"omae wa mou shindeiru", img:"resim/omae-wa.jpg" , id:"btn11"},
+      {type:"item12", name:"nanii", img:"resim/nani.jpg" , id:"btn12"},
       
     
     ];
@@ -102,6 +107,8 @@ searchInputDOM.addEventListener("input", (e) => {
   var btn8  = document.querySelector("#btn8")
   var btn9  = document.querySelector("#btn9")
   var btn10  = document.querySelector("#btn10")
+  var btn11  = document.querySelector("#btn11")
+  var btn12  = document.querySelector("#btn12")
   
   
   if(btn1!=null){
@@ -210,6 +217,26 @@ if(btn4!=null){
     
   }
 
+  if(btn11!=null){
+    btn11.onclick = function(){
+      var sayi=Number(sayitut.innerHTML)
+      sayitut.innerHTML=++sayi
+      console.log(sayi)
+      btn11_sesi.play()
+    }
+    
+  }
+
+  if(btn12!=null){
+    btn12.onclick = function(){
+      var sayi=Number(sayitut.innerHTML)
+      sayitut.innerHTML=++sayi
+      console.log(sayi)
+      btn12_sesi.play()
+    }
+    
+  }
+
   
  
 }) 
@@ -229,6 +256,8 @@ var btn7  = document.querySelector("#btn7")
 var btn8  = document.querySelector("#btn8")
 var btn9  = document.querySelector("#btn9")
 var btn10  = document.querySelector("#btn10")
+var btn11  = document.querySelector("#btn11")
+var btn12  = document.querySelector("#btn12")
 var sayitut=document.querySelector("#sayitut")
 
 
@@ -316,6 +345,21 @@ btn3.onclick = function(){
     console.log(sayi)
     btn10_sesi.play()
   } 
+
+  btn11.onclick = function(){
+    var sayi=Number(sayitut.innerHTML)
+    sayitut.innerHTML=++sayi
+    console.log(sayi)
+    btn11_sesi.play()
+  } 
+
+  btn12.onclick = function(){
+    var sayi=Number(sayitut.innerHTML)
+    sayitut.innerHTML=++sayi
+    console.log(sayi)
+    btn12_sesi.play()
+  } 
+
 
 
 
