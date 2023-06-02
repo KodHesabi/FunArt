@@ -112,10 +112,7 @@ searchInputDOM.addEventListener("input", (e) => {
   var btn11  = document.querySelector("#btn11")
   var btn12  = document.querySelector("#btn12")
   var btn13  = document.querySelector("#btn13")
-  var img1 = document.querySelector(".item.img")
-  var img2 = document.querySelector(".img2")
-  console.log(img1)
-  console.log(img2)
+ 
 
   
   
@@ -247,10 +244,6 @@ if(btn4!=null){
 
   if(btn13!=null){
     btn13.onclick = function(){
-      console.log(img1)
-      img1=img2
-      console.log(img1)
-      img="resim/ayaya-yeah.gif"
       var sayi=Number(sayitut.innerHTML)
       sayitut.innerHTML=++sayi
       console.log(sayi)
@@ -281,8 +274,6 @@ var btn10  = document.querySelector("#btn10")
 var btn11  = document.querySelector("#btn11")
 var btn12  = document.querySelector("#btn12")
 var btn13  = document.querySelector("#btn13")
-var img1 = document.querySelector(".img1")
-var img2 = document.querySelector(".img2")
 
 var sayitut=document.querySelector("#sayitut")
 
@@ -387,8 +378,6 @@ btn3.onclick = function(){
   } 
 
   btn13.onclick = function(){
-    img1=img2
-    console.log(img1)
     var sayi=Number(sayitut.innerHTML)
     sayitut.innerHTML=++sayi
     console.log(sayi)
