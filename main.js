@@ -11,7 +11,7 @@
   {type:"item9", name:"ara araa", img:"resim/akeno-ara2.jpg" , id:"btn9"},
   {type:"item10", name:"ho mete yaro", img:"resim/sukuna2.jpg" , id:"btn10"},
   {type:"item11", name:"omae wa mou shindeiru", img:"resim/omae-wa.jpg", id:"btn11"},
-  {type:"item12", name:"nanii", img:"resim/nani.jpg" , id:"btn12"},
+  {type:"item12", name:"naniii", img:"resim/nani.jpg" , id:"btn12"},
 
 
 ]; 
@@ -30,7 +30,7 @@
       {type:"item9", name:"ara araa", img:"resim/akeno-ara2.jpg" , id:"btn9"},
       {type:"item10", name:"ho mete yaro", img:"resim/sukuna2.jpg" , id:"btn10"},
       {type:"item11", name:"omae wa mou shindeiru", img:"resim/omae-wa.jpg" , id:"btn11"},
-      {type:"item12", name:"nanii", img:"resim/nani.jpg" , id:"btn12"},
+      {type:"item12", name:"naniii", img:"resim/nani.jpg" , id:"btn12"},
       
     
     ];
