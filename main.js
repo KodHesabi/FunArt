@@ -1,22 +1,65 @@
 //! JHSON yazıldı
-   var itemler= [
-  {type:"item1", name:"Sate sate sate" , img:"resim/meliodas.jpg" , id:"btn1" },
-  {type:"item2", name:"tatakae tatakae" , img:"resim/eren.jpg" , id:"btn2"},
-  {type:"item3", name:"nee sama", img:"resim/rem.jpg" , id:"btn3"},
-  {type:"item4", name:"gambare gambare", img:"resim/sukuna01.jpg", id:"btn4"}, 
-  {type:"item5", name:"okawai koto", img:"resim/kaguya03.jpg" , id:"btn5"},
-  {type:"item6", name:"yare yare", img:"resim/gojo-maceraları.jpg", id:"btn6"},
-  {type:"item7", name:"tabii efendim!", img:"resim/spiderman.jpg" , id:"btn7"},
-  {type:"item8", name:"ara sayanoraa", img:"resim/ara-sayanora.jpg" , id:"btn8"},
-  {type:"item9", name:"ara araa", img:"resim/akeno-ara2.jpg" , id:"btn9"},
-  {type:"item10", name:"ho mete yaro", img:"resim/sukuna2.jpg" , id:"btn10"},
-  {type:"item11", name:"omae wa mou shindeiru", img:"resim/omae-wa.jpg", id:"btn11"},
-  {type:"item12", name:"naniii", img:"resim/nani.jpg" , id:"btn12"},
-  {type:"item13", name:"ayayaa ayayaa", img:"resim/ayaya-ayaya.jpg" , id:"btn13"},
-  {type:"item14", name:"moshi moshii", img:"resim/moshi-moshi.jpg" , id:"btn14"},
-
-
-]; 
+var itemler = [
+  {
+    type: "item1",
+    name: "Sate sate sate",
+    img: "resim/meliodas.jpg",
+    id: "btn1",
+  },
+  { type: "item2", name: "tatakae tatakae", img: "resim/eren.jpg", id: "btn2" },
+  { type: "item3", name: "nee sama", img: "resim/rem.jpg", id: "btn3" },
+  {
+    type: "item4",
+    name: "gambare gambare",
+    img: "resim/sukuna01.jpg",
+    id: "btn4",
+  },
+  { type: "item5", name: "okawai koto", img: "resim/kaguya03.jpg", id: "btn5" },
+  {
+    type: "item6",
+    name: "yare yare",
+    img: "resim/gojo-maceraları.jpg",
+    id: "btn6",
+  },
+  {
+    type: "item7",
+    name: "tabii efendim!",
+    img: "resim/spiderman.jpg",
+    id: "btn7",
+  },
+  {
+    type: "item8",
+    name: "ara sayanoraa",
+    img: "resim/ara-sayanora.jpg",
+    id: "btn8",
+  },
+  { type: "item9", name: "ara araa", img: "resim/akeno-ara2.jpg", id: "btn9" },
+  {
+    type: "item10",
+    name: "ho mete yaro",
+    img: "resim/sukuna2.jpg",
+    id: "btn10",
+  },
+  {
+    type: "item11",
+    name: "omae wa mou shindeiru",
+    img: "resim/omae-wa.jpg",
+    id: "btn11",
+  },
+  { type: "item12", name: "naniii", img: "resim/nani.jpg", id: "btn12" },
+  {
+    type: "item13",
+    name: "ayayaa ayayaa",
+    img: "resim/ayaya-ayaya.jpg",
+    id: "btn13",
+  },
+  {
+    type: "item14",
+    name: "moshi moshii",
+    img: "resim/moshi-moshi.jpg",
+    id: "btn14",
+  },
+];
 //! JHSON bitti
 
 /*  function searchFunc(itemler){
@@ -63,22 +106,22 @@
 } */
 /* searchFunc()  */
 //! Search Başlangıc
-const searchInputDOM = document.querySelector("#searchInput")
-let value= " ";
-let filtered=[]
+const searchInputDOM = document.querySelector("#searchInput");
+let value = " ";
+let filtered = [];
 
 //!1.
 searchInputDOM.addEventListener("input", (e) => {
-  value = e.target.value
-  value= value.trim().toLowerCase()
-  
+  value = e.target.value;
+  value = value.trim().toLowerCase();
 
-  filtered = itemler.filter((item) => item.name.trim().toLowerCase().includes(value)
+  filtered = itemler.filter((item) =>
+    item.name.trim().toLowerCase().includes(value)
   );
-  let result= ""
+  let result = "";
 
   filtered.forEach((item) => {
-    result+=`
+    result += `
     <li class = "voice-item" type = ${item.type} >
     <div class="voice-image">
       
@@ -90,335 +133,325 @@ searchInputDOM.addEventListener("input", (e) => {
     </div>
   </li>
     `;
-       
-      
   });
-   searchWrapperDOM.innerHTML =  result;
+  searchWrapperDOM.innerHTML = result;
 
-   /* searchWrapperDOM.innerHTML=searchWrapperDOM.innerHTML */
-   
-  console.log(filtered)
+  /* searchWrapperDOM.innerHTML=searchWrapperDOM.innerHTML */
 
-  
-  var btn1 = document.querySelector("#btn1")
-  var btn2  = document.querySelector("#btn2")
-  var btn3  = document.querySelector("#btn3")
-  var btn4  = document.querySelector("#btn4")
-  var btn5  = document.querySelector("#btn5")
-  var btn6  = document.querySelector("#btn6")
-  var btn7  = document.querySelector("#btn7")
-  var btn8  = document.querySelector("#btn8")
-  var btn9  = document.querySelector("#btn9")
-  var btn10  = document.querySelector("#btn10")
-  var btn11  = document.querySelector("#btn11")
-  var btn12  = document.querySelector("#btn12")
-  var btn13  = document.querySelector("#btn13")
+  console.log(filtered);
+
+  var btn1 = document.querySelector("#btn1");
+  var btn2 = document.querySelector("#btn2");
+  var btn3 = document.querySelector("#btn3");
+  var btn4 = document.querySelector("#btn4");
+  var btn5 = document.querySelector("#btn5");
+  var btn6 = document.querySelector("#btn6");
+  var btn7 = document.querySelector("#btn7");
+  var btn8 = document.querySelector("#btn8");
+  var btn9 = document.querySelector("#btn9");
+  var btn10 = document.querySelector("#btn10");
+  var btn11 = document.querySelector("#btn11");
+  var btn12 = document.querySelector("#btn12");
+  var btn13 = document.querySelector("#btn13");
   const btn14 = document.querySelector("#btn14");
+
+
+  if (btn1 != null) {
+    btn1.addEventListener("click", (e) => {
+      var sayi = Number(sayitut.innerHTML);
+      sayitut.innerHTML = ++sayi;
+      console.log(sayi);
+      btn1_sesi.play();
+      btn1_sesi.currentTime = 0.5;
+    });
+  }
+
+
+  if (btn2 != null) {
+    btn2.addEventListener("click", (e) => {
+      var sayi = Number(sayitut.innerHTML);
+      sayitut.innerHTML = ++sayi;
+      console.log(sayi);
+      btn2_sesi.play();
+      btn2_sesi.currentTime = 0;
+    });
+  }
+
+
+  if (btn3 != null) {
+    btn3.addEventListener("click", (e) => {
+      var sayi = Number(sayitut.innerHTML);
+      sayitut.innerHTML = ++sayi;
+      console.log(sayi);
+      btn3_sesi.play();
+      btn3_sesi.currentTime = 0;
+    });
+  }
+
  
 
-  
-  
-  if(btn1!=null){
-    btn1.onclick = function(){
-      var sayi=Number(sayitut.innerHTML)
-      sayitut.innerHTML=++sayi
-      console.log(sayi)
-      btn1_sesi.play()
-    } 
-    
-  }
-  
-  if(btn2!=null){
-    btn2.onclick = function(){
-      var sayi=Number(sayitut.innerHTML)
-      sayitut.innerHTML=++sayi
-      console.log(sayi)
-      btn2_sesi.play()
-  } 
-
- }
-
-   if(btn3!=null){
-
-    btn3.onclick = function(){
-      var sayi=Number(sayitut.innerHTML)
-      sayitut.innerHTML=++sayi
-      console.log(sayi)
-      btn3_sesi.play()
+  if (btn4 != null) {
+    btn4.addEventListener("click", (e) => {
+      var sayi = Number(sayitut.innerHTML);
+      sayitut.innerHTML = ++sayi;
+      console.log(sayi);
+      btn4_sesi.play();
+      btn4_sesi.currentTime = 0;
+    });
   }
 
-   }
-    
-
-if(btn4!=null){
-  btn4.onclick = function(){
-    var sayi=Number(sayitut.innerHTML)
-    sayitut.innerHTML=++sayi
-    console.log(sayi)
-    btn4_sesi.play()
-  }
-    
-}
-  
-
-  if(btn5!=null){
-
-    btn5.onclick = function(){
-      var sayi=Number(sayitut.innerHTML)
-      sayitut.innerHTML=++sayi
-      console.log(sayi)
-      btn5_sesi.play()
-   } 
-    
+  if (btn5 != null) {
+    btn5.addEventListener("click", (e) => {
+      var sayi = Number(sayitut.innerHTML);
+      sayitut.innerHTML = ++sayi;
+      console.log(sayi);
+      btn5_sesi.play();
+      btn5_sesi.currentTime = 0;
+    });
   }
 
-  
- if(btn6!=null){
-  btn6.onclick = function(){
-    var sayi=Number(sayitut.innerHTML)
-    sayitut.innerHTML=++sayi
-    console.log(sayi)
-    btn6_sesi.play()
-  } 
-    
- }
-
-
-  if(btn7!=null){
-    btn7.onclick = function(){
-      var sayi=Number(sayitut.innerHTML)
-      sayitut.innerHTML=++sayi
-      console.log(sayi)
-      btn7_sesi.play()
-    }
-    
+  if (btn6 != null) {
+    btn6.addEventListener("click", (e) => {
+      var sayi = Number(sayitut.innerHTML);
+      sayitut.innerHTML = ++sayi;
+      console.log(sayi);
+      btn6_sesi.play();
+      btn6_sesi.currentTime = 0;
+    });
   }
 
-  if(btn8!=null){
-    btn8.onclick = function(){
-      var sayi=Number(sayitut.innerHTML)
-      sayitut.innerHTML=++sayi
-      console.log(sayi)
-      btn8_sesi.play()
-    }
-    
+  if (btn7 != null) {
+    btn7.addEventListener("click", (e) => {
+      var sayi = Number(sayitut.innerHTML);
+      sayitut.innerHTML = ++sayi;
+      console.log(sayi);
+      btn7_sesi.play();
+      btn7_sesi.currentTime = 0;
+    });
   }
 
-  if(btn9!=null){
-    btn9.onclick = function(){
-      var sayi=Number(sayitut.innerHTML)
-      sayitut.innerHTML=++sayi
-      console.log(sayi)
-      btn9_sesi.play()
-    }
-    
+  if (btn8 != null) {
+    btn8.addEventListener("click", (e) => {
+      var sayi = Number(sayitut.innerHTML);
+      sayitut.innerHTML = ++sayi;
+      console.log(sayi);
+      btn8_sesi.play();
+      btn8_sesi.currentTime = 0;
+    });
   }
 
-  if(btn10!=null){
-    btn10.onclick = function(){
-      var sayi=Number(sayitut.innerHTML)
-      sayitut.innerHTML=++sayi
-      console.log(sayi)
-      btn10_sesi.play()
-    }
-    
+  if (btn9 != null) {
+    btn9.addEventListener("click", (e) => {
+      var sayi = Number(sayitut.innerHTML);
+      sayitut.innerHTML = ++sayi;
+      console.log(sayi);
+      btn9_sesi.play();
+      btn9_sesi.currentTime = 0;
+    });
   }
 
-  if(btn11!=null){
-    btn11.onclick = function(){
-      var sayi=Number(sayitut.innerHTML)
-      sayitut.innerHTML=++sayi
-      console.log(sayi)
-      btn11_sesi.play()
-    }
-    
+  if (btn10 != null) {
+    btn10.addEventListener("click", (e) => {
+      var sayi = Number(sayitut.innerHTML);
+      sayitut.innerHTML = ++sayi;
+      console.log(sayi);
+      btn10_sesi.play();
+      btn10_sesi.currentTime = 0;
+    });
   }
 
-  if(btn12!=null){
-    btn12.onclick = function(){
-      var sayi=Number(sayitut.innerHTML)
-      sayitut.innerHTML=++sayi
-      console.log(sayi)
-      btn12_sesi.play()
-    }
-    
+  if (btn11 != null) {
+    btn11.addEventListener("click", (e) => {
+      var sayi = Number(sayitut.innerHTML);
+      sayitut.innerHTML = ++sayi;
+      console.log(sayi);
+      btn11_sesi.play();
+      btn11_sesi.currentTime = 0;
+    });
   }
 
-  if(btn13!=null){
-    btn13.onclick = function(){
-      var sayi=Number(sayitut.innerHTML)
-      sayitut.innerHTML=++sayi
-      console.log(sayi)
-      btn13_sesi.play()
-    }
-    
+  if (btn12 != null) {
+    btn12.addEventListener("click", (e) => {
+      var sayi = Number(sayitut.innerHTML);
+      sayitut.innerHTML = ++sayi;
+      console.log(sayi);
+      btn12_sesi.play();
+      btn12_sesi.currentTime = 0;
+      e.preventDefault();
+    });
   }
 
-  if(btn14!=null){
-    btn14.addEventListener('click', (e) => {
-
-      var sayi=Number(sayitut.innerHTML)
-      sayitut.innerHTML=++sayi
-      console.log(sayi)
-      btn14_sesi.play()
-      e.preventDefault()
-  
-    
-    })
-    
+  if (btn13 != null) {
+    btn13.addEventListener("click", (e) => {
+      var sayi = Number(sayitut.innerHTML);
+      sayitut.innerHTML = ++sayi;
+      console.log(sayi);
+      btn13_sesi.play();
+      btn13_sesi.currentTime = 0;
+      e.preventDefault();
+    });
   }
 
-  
- 
-}) 
+  if (btn14 != null) {
+    btn14.addEventListener("click", (e) => {
+      var sayi = Number(sayitut.innerHTML);
+      sayitut.innerHTML = ++sayi;
+      console.log(sayi);
+      btn14_sesi.play();
+      btn14_sesi.currentTime = 0;
+      e.preventDefault();
+    });
+  }
+});
 
 //! Search Bitis
 
 //? butonlar eklendi
 
-const searchWrapperDOM =  document.querySelector(".voice-wrapper .voice-list")
-var btn1 = document.querySelector("#btn1")
-var btn2  = document.querySelector("#btn2")
-var btn3  = document.querySelector("#btn3")
-var btn4  = document.querySelector("#btn4")
-var btn5  = document.querySelector("#btn5")
-var btn6  = document.querySelector("#btn6")
-var btn7  = document.querySelector("#btn7")
-var btn8  = document.querySelector("#btn8")
-var btn9  = document.querySelector("#btn9")
-var btn10  = document.querySelector("#btn10")
-var btn11  = document.querySelector("#btn11")
-var btn12  = document.querySelector("#btn12")
-var btn13  = document.querySelector("#btn13")
+const searchWrapperDOM = document.querySelector(".voice-wrapper .voice-list");
+var btn1 = document.querySelector("#btn1");
+var btn2 = document.querySelector("#btn2");
+var btn3 = document.querySelector("#btn3");
+var btn4 = document.querySelector("#btn4");
+var btn5 = document.querySelector("#btn5");
+var btn6 = document.querySelector("#btn6");
+var btn7 = document.querySelector("#btn7");
+var btn8 = document.querySelector("#btn8");
+var btn9 = document.querySelector("#btn9");
+var btn10 = document.querySelector("#btn10");
+var btn11 = document.querySelector("#btn11");
+var btn12 = document.querySelector("#btn12");
+var btn13 = document.querySelector("#btn13");
 
 const btn14 = document.querySelector("#btn14");
 
-var sayitut=document.querySelector("#sayitut")
-
+var sayitut = document.querySelector("#sayitut");
 
 //! data içerisndeki result ve datayı name ve ürün olarak alacagım.
 
 //! onclik codları
-btn_baslangic.onclick = function(){
-    var sayi=Number(sayitut.innerHTML)
-    sayitut.innerHTML=++sayi
-    console.log(sayi)
-    btn_başlangic_sesi.play()
-    
-}
 
-btn1.onclick = function(){
-    var sayi=Number(sayitut.innerHTML)
-    sayitut.innerHTML=++sayi
-    console.log(sayi)
-    btn1_sesi.play()
-}
+btn_baslangic.addEventListener("click", (e) => {
+  var sayi = Number(sayitut.innerHTML);
+  sayitut.innerHTML = ++sayi;
+  console.log(sayi);
+  btn_başlangic_sesi.play();
+  btn_başlangic_sesi.currentTime = 0;
+});
 
 
-btn2.onclick = function(){
-    var sayi=Number(sayitut.innerHTML)
-    sayitut.innerHTML=++sayi
-    console.log(sayi)
-    btn2_sesi.play()
-} 
 
+btn1.addEventListener("click", (e) => {
+  var sayi = Number(sayitut.innerHTML);
+  sayitut.innerHTML = ++sayi;
+  console.log(sayi);
+  btn1_sesi.play();
+  btn1_sesi.currentTime = 0.5;
+});
 
-btn3.onclick = function(){
-    var sayi=Number(sayitut.innerHTML)
-    sayitut.innerHTML=++sayi
-    console.log(sayi)
-    btn3_sesi.play()
-} 
+btn2.addEventListener("click", (e) => {
+  var sayi = Number(sayitut.innerHTML);
+  sayitut.innerHTML = ++sayi;
+  console.log(sayi);
+  btn2_sesi.play();
+  btn2_sesi.currentTime = 0;
+});
 
+btn3.addEventListener("click", (e) => {
+  var sayi = Number(sayitut.innerHTML);
+  sayitut.innerHTML = ++sayi;
+  console.log(sayi);
+  btn3_sesi.play();
+  btn3_sesi.currentTime = 0;
+});
 
- btn4.onclick = function(){
-    var sayi=Number(sayitut.innerHTML)
-    sayitut.innerHTML=++sayi
-    console.log(sayi)
-    btn4_sesi.play()
-}
- 
+btn4.addEventListener("click", (e) => {
+  var sayi = Number(sayitut.innerHTML);
+  sayitut.innerHTML = ++sayi;
+  console.log(sayi);
+  btn4_sesi.play();
+  btn4_sesi.currentTime = 0;
+});
 
-  btn5.onclick = function(){
-    var sayi=Number(sayitut.innerHTML)
-    sayitut.innerHTML=++sayi
-    console.log(sayi)
-    btn5_sesi.play()
-   
-    
-    
-      
-    
-  }
+btn5.addEventListener("click", (e) => {
+  var sayi = Number(sayitut.innerHTML);
+  sayitut.innerHTML = ++sayi;
+  console.log(sayi);
+  btn5_sesi.play();
+  btn5_sesi.currentTime = 0;
+});
 
-  btn6.onclick = function(){
-    var sayi=Number(sayitut.innerHTML)
-    sayitut.innerHTML=++sayi
-    console.log(sayi)
-    btn6_sesi.play()
-  }
+btn6.addEventListener("click", (e) => {
+  var sayi = Number(sayitut.innerHTML);
+  sayitut.innerHTML = ++sayi;
+  console.log(sayi);
+  btn6_sesi.play();
+  btn6_sesi.currentTime = 0;
+});
 
-  btn7.onclick = function(){
-    var sayi=Number(sayitut.innerHTML)
-    sayitut.innerHTML=++sayi
-    console.log(sayi)
-    btn7_sesi.play()
-  }
+btn7.addEventListener("click", (e) => {
+  var sayi = Number(sayitut.innerHTML);
+  sayitut.innerHTML = ++sayi;
+  console.log(sayi);
+  btn7_sesi.play();
+  btn7_sesi.currentTime = 0;
+});
 
-  btn8.onclick = function(){
-    var sayi=Number(sayitut.innerHTML)
-    sayitut.innerHTML=++sayi
-    console.log(sayi)
-    btn8_sesi.play()
-  }
+btn8.addEventListener("click", (e) => {
+  var sayi = Number(sayitut.innerHTML);
+  sayitut.innerHTML = ++sayi;
+  console.log(sayi);
+  btn8_sesi.play();
+  btn8_sesi.currentTime = 0;
+});
 
-  btn9.onclick = function(){
-    var sayi=Number(sayitut.innerHTML)
-    sayitut.innerHTML=++sayi
-    console.log(sayi)
-    btn9_sesi.play()
-  }
+btn9.addEventListener("click", (e) => {
+  var sayi = Number(sayitut.innerHTML);
+  sayitut.innerHTML = ++sayi;
+  console.log(sayi);
+  btn9_sesi.play();
+  btn9_sesi.currentTime = 0;
+});
 
-   btn10.onclick = function(){
-    var sayi=Number(sayitut.innerHTML)
-    sayitut.innerHTML=++sayi
-    console.log(sayi)
-    btn10_sesi.play()
-  } 
+btn10.addEventListener("click", (e) => {
+  var sayi = Number(sayitut.innerHTML);
+  sayitut.innerHTML = ++sayi;
+  console.log(sayi);
+  btn10_sesi.play();
+  btn10_sesi.currentTime = 0;
+});
 
-  btn11.onclick = function(){
-    var sayi=Number(sayitut.innerHTML)
-    sayitut.innerHTML=++sayi
-    console.log(sayi)
-    btn11_sesi.play()
-  } 
+btn11.addEventListener("click", (e) => {
+  var sayi = Number(sayitut.innerHTML);
+  sayitut.innerHTML = ++sayi;
+  console.log(sayi);
+  btn11_sesi.play();
+  btn11_sesi.currentTime = 0;
+});
 
-  btn12.onclick = function(){
-    var sayi=Number(sayitut.innerHTML)
-    sayitut.innerHTML=++sayi
-    console.log(sayi)
-    btn12_sesi.play()
-  } 
+btn12.addEventListener("click", (e) => {
+  var sayi = Number(sayitut.innerHTML);
+  sayitut.innerHTML = ++sayi;
+  console.log(sayi);
+  btn12_sesi.play();
+  btn12_sesi.currentTime = 0;
+});
 
-  btn13.onclick = function(){
-    var sayi=Number(sayitut.innerHTML)
-    sayitut.innerHTML=++sayi
-    console.log(sayi)
-    btn13_sesi.play()
-  } 
+btn13.addEventListener("click", (e) => {
+  var sayi = Number(sayitut.innerHTML);
+  sayitut.innerHTML = ++sayi;
+  console.log(sayi);
+  btn13_sesi.play();
+  btn13_sesi.currentTime = 0;
+});
 
-  btn14.addEventListener('click', (e) => {
-
-    var sayi=Number(sayitut.innerHTML)
-    sayitut.innerHTML=++sayi
-    console.log(sayi)
-    btn14_sesi.play()
-    e.preventDefault()
-
-  
-  })
-
-
+btn14.addEventListener("click", (e) => {
+  var sayi = Number(sayitut.innerHTML);
+  sayitut.innerHTML = ++sayi;
+  console.log(sayi);
+  btn14_sesi.play();
+  btn14_sesi.currentTime = 0;
+});
 
 /*
 var data=[]
