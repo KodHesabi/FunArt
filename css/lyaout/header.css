@@ -1,8 +1,14 @@
 .voice{
-    margin: 50px 15px;
+    margin-top: 30px;
+    margin-bottom: 50px;
     
 }
 /*! Section */
+.voice .header-left .logo{
+    margin: 0px 40px;
+    
+}
+
 .section-title{
     text-align: center;
     

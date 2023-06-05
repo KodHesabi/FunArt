@@ -85,6 +85,21 @@ button {
  color: white;
 }
 
+
+.logo {
+  width: 82px;
+  height: 82px;
+
+  color:  darkslategray;
+
+  font-size: 24px;
+  border-radius: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
 /*! Base bitiş */
 
 /* ? responsive */

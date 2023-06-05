@@ -1,0 +1,28 @@
+.footer{
+    margin-top: 35px;
+    background-color: white;
+}
+
+.footer .footer-top{
+    display: flex;
+   
+
+}
+
+.footer .footer-info{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 28px;
+
+}
+
+
+.footer .site-copyright{
+    font-size: 16px;
+    opacity: 0.8;
+    margin: 15px 0px;
+   
+     
+}
