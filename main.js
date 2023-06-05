@@ -362,14 +362,15 @@ const btn14 = document.querySelector("#btn14");
 let sayac = localStorage.getItem("clicksayac") //! click sayacın değeri
 console.log(sayac) */
 var sayitut = document.querySelector("#sayitut");
-
+var sayitut2 = document.querySelector("#sayitut2");
 //! data içerisndeki result ve datayı name ve ürün olarak alacagım.
 
 //! onclik codları
 
 btn_baslangic.addEventListener("click", (e) => {
-  var sayi = Number(sayitut.innerHTML);
-  sayitut.innerHTML = ++sayi;
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
   console.log(sayi);
   btn_başlangic_sesi.play();
   btn_başlangic_sesi.currentTime = 0;
@@ -378,10 +379,14 @@ btn_baslangic.addEventListener("click", (e) => {
 
 
 btn1.addEventListener("click", (e) => {
-
+  
+  
   sayitut.innerHTML = localStorage.getItem("clicksayac")
   let sayi = localStorage.getItem("clicksayac")
   ++sayi;
+  window.globalsayac=sayi;
+  sayitut2.innerHTML = window.globalsayac
+  console.log(globalsayac)
   localStorage.setItem("clicksayac",sayi)
   console.log(sayi);
   btn1_sesi.play();
