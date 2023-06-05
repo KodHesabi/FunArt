@@ -41,6 +41,7 @@
 
     .footer .site-copyright{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
        
@@ -48,6 +49,7 @@
     }
     .footer .footer-top{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
        
