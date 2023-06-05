@@ -353,7 +353,7 @@ var btn10 = document.querySelector("#btn10");
 var btn11 = document.querySelector("#btn11");
 var btn12 = document.querySelector("#btn12");
 var btn13 = document.querySelector("#btn13");
- /* localStorage.setItem("clicksayac","0") */
+ localStorage.setItem("clicksayac","0") 
 
 
 const btn14 = document.querySelector("#btn14");
