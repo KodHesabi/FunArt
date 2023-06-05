@@ -1,5 +1,6 @@
 .voice{
     margin: 50px 15px;
+    
 }
 /*! Section */
 .section-title{
@@ -9,25 +10,28 @@
 }
 
 .section-title h2{
-    font-size: 32px;
+    font-size: 38px;
     font-weight: 600;
 }
 
 .section-title p{
-    font-size: 18px;
+    font-size: 22px;
     opacity: 0.8;
     margin-bottom: 75px; 
 }
 
 .section-title p button{
-    background-color: yellow;
-    font-size: 18px;
+    background-color:yellow;
+    color: black;
+    border-color: #1367ef;
+    font-size: 22px;
     font-weight: 400; 
     display: inline-block;
 }
 .section-title p button:hover{
    
-    color: #ff3c20;
+    background-color:darkviolet;
+    color: white;
 }
 
 .voice .clicksayac{
