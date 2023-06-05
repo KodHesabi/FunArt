@@ -380,15 +380,9 @@ btn_baslangic.addEventListener("click", (e) => {
 
 btn1.addEventListener("click", (e) => {
   
-  
   sayitut.innerHTML = localStorage.getItem("clicksayac")
   let sayi = localStorage.getItem("clicksayac")
   ++sayi;
-  window.globalsayac=sayi;
-  let sayi2 = window.globalsayac
-  ++sayi2;
-  sayitut2.innerHTML = window.globalsayac
-  console.log(globalsayac)
   localStorage.setItem("clicksayac",sayi)
   console.log(sayi);
   btn1_sesi.play();
