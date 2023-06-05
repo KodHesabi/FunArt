@@ -1,3 +1,4 @@
+
 //! JHSON yazıldı
 var itemler = [
   {
@@ -108,7 +109,7 @@ var itemler = [
 } */
 /* searchFunc()  */
 //! Search Başlangıc
-const searchInputDOM = document.querySelector("#searchInput");
+const searchInputDOM = document.querySelector("#searchInput"); 
 let value = " ";
 let filtered = [];
 
@@ -368,6 +369,7 @@ var sayitut2 = document.querySelector("#sayitut2");
 //! onclik codları
 
 btn_baslangic.addEventListener("click", (e) => {
+  sayitut.innerHTML = localStorage.getItem("clicksayac")
   let sayi = localStorage.getItem("clicksayac")
   ++sayi;
   localStorage.setItem("clicksayac",sayi)
@@ -518,6 +520,9 @@ btn14.addEventListener("click", (e) => {
   btn14_sesi.play();
   btn14_sesi.currentTime = 0;
 });
+
+
+
 
 
 /*
