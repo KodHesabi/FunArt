@@ -87,12 +87,12 @@ button {
 
 
 .logo {
-  width: 82px;
-  height: 82px;
+  width: 70px;
+  height: 70px;
 
   color:  darkslategray;
 
-  font-size: 24px;
+  font-size: 28px;
   border-radius: 90%;
   display: flex;
   align-items: center;
