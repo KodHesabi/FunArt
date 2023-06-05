@@ -385,6 +385,8 @@ btn1.addEventListener("click", (e) => {
   let sayi = localStorage.getItem("clicksayac")
   ++sayi;
   window.globalsayac=sayi;
+  let sayi2 = window.globalsayac
+  ++sayi2;
   sayitut2.innerHTML = window.globalsayac
   console.log(globalsayac)
   localStorage.setItem("clicksayac",sayi)
