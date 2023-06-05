@@ -62,6 +62,8 @@ var itemler = [
 ];
 //! JHSON bitti
 
+
+
 /*  function searchFunc(itemler){
      var itemler= [
       {type:"item1", name:"Sate sate sate" , img:"resim/meliodas.jpg" , id:"btn1" },
@@ -154,12 +156,15 @@ searchInputDOM.addEventListener("input", (e) => {
   var btn12 = document.querySelector("#btn12");
   var btn13 = document.querySelector("#btn13");
   const btn14 = document.querySelector("#btn14");
+  /* localStorage.setItem("clicksayac","0") */
 
 
   if (btn1 != null) {
     btn1.addEventListener("click", (e) => {
-      var sayi = Number(sayitut.innerHTML);
-      sayitut.innerHTML = ++sayi;
+      sayitut.innerHTML = localStorage.getItem("clicksayac")
+      let sayi = localStorage.getItem("clicksayac")
+      ++sayi;
+      localStorage.setItem("clicksayac",sayi)
       console.log(sayi);
       btn1_sesi.play();
       btn1_sesi.currentTime = 0.5;
@@ -169,8 +174,10 @@ searchInputDOM.addEventListener("input", (e) => {
 
   if (btn2 != null) {
     btn2.addEventListener("click", (e) => {
-      var sayi = Number(sayitut.innerHTML);
-      sayitut.innerHTML = ++sayi;
+      sayitut.innerHTML = localStorage.getItem("clicksayac")
+      let sayi = localStorage.getItem("clicksayac")
+      ++sayi;
+      localStorage.setItem("clicksayac",sayi)
       console.log(sayi);
       btn2_sesi.play();
       btn2_sesi.currentTime = 0;
@@ -180,8 +187,10 @@ searchInputDOM.addEventListener("input", (e) => {
 
   if (btn3 != null) {
     btn3.addEventListener("click", (e) => {
-      var sayi = Number(sayitut.innerHTML);
-      sayitut.innerHTML = ++sayi;
+      sayitut.innerHTML = localStorage.getItem("clicksayac")
+      let sayi = localStorage.getItem("clicksayac")
+      ++sayi;
+      localStorage.setItem("clicksayac",sayi)
       console.log(sayi);
       btn3_sesi.play();
       btn3_sesi.currentTime = 0;
@@ -192,8 +201,10 @@ searchInputDOM.addEventListener("input", (e) => {
 
   if (btn4 != null) {
     btn4.addEventListener("click", (e) => {
-      var sayi = Number(sayitut.innerHTML);
-      sayitut.innerHTML = ++sayi;
+      sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
       console.log(sayi);
       btn4_sesi.play();
       btn4_sesi.currentTime = 0;
@@ -202,8 +213,10 @@ searchInputDOM.addEventListener("input", (e) => {
 
   if (btn5 != null) {
     btn5.addEventListener("click", (e) => {
-      var sayi = Number(sayitut.innerHTML);
-      sayitut.innerHTML = ++sayi;
+      sayitut.innerHTML = localStorage.getItem("clicksayac")
+      let sayi = localStorage.getItem("clicksayac")
+      ++sayi;
+      localStorage.setItem("clicksayac",sayi)
       console.log(sayi);
       btn5_sesi.play();
       btn5_sesi.currentTime = 0;
@@ -212,8 +225,10 @@ searchInputDOM.addEventListener("input", (e) => {
 
   if (btn6 != null) {
     btn6.addEventListener("click", (e) => {
-      var sayi = Number(sayitut.innerHTML);
-      sayitut.innerHTML = ++sayi;
+      sayitut.innerHTML = localStorage.getItem("clicksayac")
+      let sayi = localStorage.getItem("clicksayac")
+      ++sayi;
+      localStorage.setItem("clicksayac",sayi)
       console.log(sayi);
       btn6_sesi.play();
       btn6_sesi.currentTime = 0;
@@ -222,8 +237,10 @@ searchInputDOM.addEventListener("input", (e) => {
 
   if (btn7 != null) {
     btn7.addEventListener("click", (e) => {
-      var sayi = Number(sayitut.innerHTML);
-      sayitut.innerHTML = ++sayi;
+      sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
       console.log(sayi);
       btn7_sesi.play();
       btn7_sesi.currentTime = 0;
@@ -232,8 +249,10 @@ searchInputDOM.addEventListener("input", (e) => {
 
   if (btn8 != null) {
     btn8.addEventListener("click", (e) => {
-      var sayi = Number(sayitut.innerHTML);
-      sayitut.innerHTML = ++sayi;
+      sayitut.innerHTML = localStorage.getItem("clicksayac")
+      let sayi = localStorage.getItem("clicksayac")
+      ++sayi;
+      localStorage.setItem("clicksayac",sayi)
       console.log(sayi);
       btn8_sesi.play();
       btn8_sesi.currentTime = 0;
@@ -242,8 +261,10 @@ searchInputDOM.addEventListener("input", (e) => {
 
   if (btn9 != null) {
     btn9.addEventListener("click", (e) => {
-      var sayi = Number(sayitut.innerHTML);
-      sayitut.innerHTML = ++sayi;
+      sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
       console.log(sayi);
       btn9_sesi.play();
       btn9_sesi.currentTime = 0;
@@ -252,8 +273,10 @@ searchInputDOM.addEventListener("input", (e) => {
 
   if (btn10 != null) {
     btn10.addEventListener("click", (e) => {
-      var sayi = Number(sayitut.innerHTML);
-      sayitut.innerHTML = ++sayi;
+      sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
       console.log(sayi);
       btn10_sesi.play();
       btn10_sesi.currentTime = 0;
@@ -262,8 +285,10 @@ searchInputDOM.addEventListener("input", (e) => {
 
   if (btn11 != null) {
     btn11.addEventListener("click", (e) => {
-      var sayi = Number(sayitut.innerHTML);
-      sayitut.innerHTML = ++sayi;
+      sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
       console.log(sayi);
       btn11_sesi.play();
       btn11_sesi.currentTime = 0;
@@ -272,8 +297,10 @@ searchInputDOM.addEventListener("input", (e) => {
 
   if (btn12 != null) {
     btn12.addEventListener("click", (e) => {
-      var sayi = Number(sayitut.innerHTML);
-      sayitut.innerHTML = ++sayi;
+      sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
       console.log(sayi);
       btn12_sesi.play();
       btn12_sesi.currentTime = 0;
@@ -283,8 +310,10 @@ searchInputDOM.addEventListener("input", (e) => {
 
   if (btn13 != null) {
     btn13.addEventListener("click", (e) => {
-      var sayi = Number(sayitut.innerHTML);
-      sayitut.innerHTML = ++sayi;
+      sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
       console.log(sayi);
       btn13_sesi.play();
       btn13_sesi.currentTime = 0;
@@ -294,8 +323,10 @@ searchInputDOM.addEventListener("input", (e) => {
 
   if (btn14 != null) {
     btn14.addEventListener("click", (e) => {
-      var sayi = Number(sayitut.innerHTML);
-      sayitut.innerHTML = ++sayi;
+      sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
       console.log(sayi);
       btn14_sesi.play();
       btn14_sesi.currentTime = 0;
@@ -322,9 +353,14 @@ var btn10 = document.querySelector("#btn10");
 var btn11 = document.querySelector("#btn11");
 var btn12 = document.querySelector("#btn12");
 var btn13 = document.querySelector("#btn13");
+ /* localStorage.setItem("clicksayac","0") */
+
 
 const btn14 = document.querySelector("#btn14");
 
+/* localStorage.setItem("clicksayac","0")
+let sayac = localStorage.getItem("clicksayac") //! click sayacın değeri
+console.log(sayac) */
 var sayitut = document.querySelector("#sayitut");
 
 //! data içerisndeki result ve datayı name ve ürün olarak alacagım.
@@ -342,135 +378,146 @@ btn_baslangic.addEventListener("click", (e) => {
 
 
 btn1.addEventListener("click", (e) => {
-  var sayi = Number(sayitut.innerHTML);
-  sayitut.innerHTML = ++sayi;
+
+  sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
   console.log(sayi);
   btn1_sesi.play();
-  btn1_sesi.currentTime = 0.5;
+  btn1_sesi.currentTime = 0.6;
 });
 
 btn2.addEventListener("click", (e) => {
-  var sayi = Number(sayitut.innerHTML);
-  sayitut.innerHTML = ++sayi;
+  sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
   console.log(sayi);
   btn2_sesi.play();
   btn2_sesi.currentTime = 0;
 });
 
 btn3.addEventListener("click", (e) => {
-  var sayi = Number(sayitut.innerHTML);
-  sayitut.innerHTML = ++sayi;
+  sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
   console.log(sayi);
   btn3_sesi.play();
   btn3_sesi.currentTime = 0;
 });
 
 btn4.addEventListener("click", (e) => {
-  var sayi = Number(sayitut.innerHTML);
-  sayitut.innerHTML = ++sayi;
+  sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
   console.log(sayi);
   btn4_sesi.play();
   btn4_sesi.currentTime = 0;
 });
 
 btn5.addEventListener("click", (e) => {
-  var sayi = Number(sayitut.innerHTML);
-  sayitut.innerHTML = ++sayi;
+  sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
   console.log(sayi);
   btn5_sesi.play();
   btn5_sesi.currentTime = 0;
 });
 
 btn6.addEventListener("click", (e) => {
-  var sayi = Number(sayitut.innerHTML);
-  sayitut.innerHTML = ++sayi;
+  sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
   console.log(sayi);
   btn6_sesi.play();
   btn6_sesi.currentTime = 0;
 });
 
 btn7.addEventListener("click", (e) => {
-  var sayi = Number(sayitut.innerHTML);
-  sayitut.innerHTML = ++sayi;
+  sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
   console.log(sayi);
   btn7_sesi.play();
   btn7_sesi.currentTime = 0;
 });
 
 btn8.addEventListener("click", (e) => {
-  var sayi = Number(sayitut.innerHTML);
-  sayitut.innerHTML = ++sayi;
+  sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
   console.log(sayi);
   btn8_sesi.play();
   btn8_sesi.currentTime = 0;
 });
 
 btn9.addEventListener("click", (e) => {
-  var sayi = Number(sayitut.innerHTML);
-  sayitut.innerHTML = ++sayi;
+  sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
   console.log(sayi);
   btn9_sesi.play();
   btn9_sesi.currentTime = 0;
 });
 
 btn10.addEventListener("click", (e) => {
-  var sayi = Number(sayitut.innerHTML);
-  sayitut.innerHTML = ++sayi;
+  sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
   console.log(sayi);
   btn10_sesi.play();
   btn10_sesi.currentTime = 0;
 });
 
 btn11.addEventListener("click", (e) => {
-  var sayi = Number(sayitut.innerHTML);
-  sayitut.innerHTML = ++sayi;
+  sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
   console.log(sayi);
   btn11_sesi.play();
   btn11_sesi.currentTime = 0;
 });
 
 btn12.addEventListener("click", (e) => {
-  var sayi = Number(sayitut.innerHTML);
-  sayitut.innerHTML = ++sayi;
+  sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
   console.log(sayi);
   btn12_sesi.play();
   btn12_sesi.currentTime = 0;
 });
 
 btn13.addEventListener("click", (e) => {
-  var sayi = Number(sayitut.innerHTML);
-  sayitut.innerHTML = ++sayi;
+  sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
   console.log(sayi);
   btn13_sesi.play();
   btn13_sesi.currentTime = 0;
 });
 
 btn14.addEventListener("click", (e) => {
-  var sayi = Number(sayitut.innerHTML);
-  sayitut.innerHTML = ++sayi;
+  sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
   console.log(sayi);
   btn14_sesi.play();
   btn14_sesi.currentTime = 0;
 });
 
-
-var mysql = require('mysql')
-
-var baglanti = mysql.createConnection({
-  host : 'localhost',
-  user : 'root',
-  password : '',
-  database: "test",
-  
-});
-
-baglanti.connect (function(err){
-  if(err) throw err; 
-  baglanti.query("CREATE TABLE musteriler (name VARCHAR(30), adres VARCHAR(35) ) ", function(err){
-    /* if(err) throw err; */
-    console.log("Tablo Oluşturuldu")
-  })
-}) 
 
 /*
 var data=[]
