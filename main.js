@@ -60,6 +60,12 @@ var itemler = [
     img: "resim/moshi-moshi.jpg",
     id: "btn14",
   },
+  {
+    type: "item15",
+    name: "ram and rem",
+    img: "resim/rem-ram1.jpg",
+    id: "btn15",
+  },
 ];
 //! JHSON bitti
 
@@ -157,6 +163,7 @@ searchInputDOM.addEventListener("input", (e) => {
   var btn12 = document.querySelector("#btn12");
   var btn13 = document.querySelector("#btn13");
   const btn14 = document.querySelector("#btn14");
+  const btn15 = document.querySelector("#btn15");
   /* localStorage.setItem("clicksayac","0") */
 
 
@@ -334,6 +341,22 @@ searchInputDOM.addEventListener("input", (e) => {
       e.preventDefault();
     });
   }
+
+  if (btn15 != null) {
+    btn14.addEventListener("click", (e) => {
+      sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
+      console.log(sayi);
+      btn15_sesi.play();
+      btn15_sesi.currentTime = 0;
+      e.preventDefault();
+    });
+  }
+
+
+
 });
 
 //! Search Bitis
@@ -358,6 +381,7 @@ var btn13 = document.querySelector("#btn13");
 
 
 const btn14 = document.querySelector("#btn14");
+const btn15 = document.querySelector("#btn15");
 
 /* localStorage.setItem("clicksayac","0")
 let sayac = localStorage.getItem("clicksayac") //! click sayacın değeri
@@ -519,6 +543,16 @@ btn14.addEventListener("click", (e) => {
   console.log(sayi);
   btn14_sesi.play();
   btn14_sesi.currentTime = 0;
+});
+
+btn15.addEventListener("click", (e) => {
+  sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
+  console.log(sayi);
+  btn15_sesi.play();
+  btn15_sesi.currentTime = 0;
 });
 
 
