@@ -70,7 +70,6 @@ var itemler = [
 //! JHSON bitti
 
 
-
 /*  function searchFunc(itemler){
      var itemler= [
       {type:"item1", name:"Sate sate sate" , img:"resim/meliodas.jpg" , id:"btn1" },
@@ -356,7 +355,6 @@ searchInputDOM.addEventListener("input", (e) => {
   }
 
 
-
 });
 
 //! Search Bitis
@@ -403,7 +401,6 @@ btn_baslangic.addEventListener("click", (e) => {
 });
 
 
-
 btn1.addEventListener("click", (e) => {
   
   sayitut.innerHTML = localStorage.getItem("clicksayac")
@@ -412,7 +409,7 @@ btn1.addEventListener("click", (e) => {
   localStorage.setItem("clicksayac",sayi)
   console.log(sayi);
   btn1_sesi.play();
-  btn1_sesi.currentTime = 1;
+  btn1_sesi.currentTime = 0.6;
 });
 
 btn2.addEventListener("click", (e) => {
