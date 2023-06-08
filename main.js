@@ -412,7 +412,7 @@ btn1.addEventListener("click", (e) => {
   localStorage.setItem("clicksayac",sayi)
   console.log(sayi);
   btn1_sesi.play();
-  btn1_sesi.currentTime = 0.6;
+  btn1_sesi.currentTime = 1;
 });
 
 btn2.addEventListener("click", (e) => {
