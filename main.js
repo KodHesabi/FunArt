@@ -66,6 +66,51 @@ var itemler = [
     img: "resim/rem-ram1.jpg",
     id: "btn15",
   },
+
+  {
+    type: "item16",
+    name: "Mary Saotome",
+    img: "resim/bakaa/mary.jpg",
+    id: "btn16",
+  },
+
+  {
+    type: "item17",
+    name: "Gambare Gabimaru",
+    img: "resim/gabimaru.jpg",
+    id: "btn17",
+  },
+
+  {
+    type: "item18",
+    name: "Bakaa",
+    img: "resim/bakaa/bunyy.jpg",
+    id: "btn18",
+  },
+
+  {
+    type: "item19",
+    name: "baka baka bakaa",
+    img: "resim/bakaa/images.jpg",
+    id: "btn19",
+  },
+
+  {
+    type: "item20",
+    name: "baka",
+    img: "resim/bakaa/baka.gif",
+    id: "btn20",
+  },
+
+  {
+    type: "item21",
+    name: "like a baka",
+    img: "resim/bakaa/like-a-baka.jpg",
+    id: "btn21",
+  },
+
+  
+
 ];
 //! JHSON bitti
 
@@ -163,6 +208,12 @@ searchInputDOM.addEventListener("input", (e) => {
   var btn13 = document.querySelector("#btn13");
   const btn14 = document.querySelector("#btn14");
   const btn15 = document.querySelector("#btn15");
+  const btn16 = document.querySelector("#btn16");
+  const btn17 = document.querySelector("#btn17");
+  const btn18 = document.querySelector("#btn18");
+  const btn19 = document.querySelector("#btn19");
+  const btn20 = document.querySelector("#btn20");
+  const btn21 = document.querySelector("#btn21");
   /* localStorage.setItem("clicksayac","0") */
 
 
@@ -342,7 +393,7 @@ searchInputDOM.addEventListener("input", (e) => {
   }
 
   if (btn15 != null) {
-    btn14.addEventListener("click", (e) => {
+    btn15.addEventListener("click", (e) => {
       sayitut.innerHTML = localStorage.getItem("clicksayac")
   let sayi = localStorage.getItem("clicksayac")
   ++sayi;
@@ -350,6 +401,84 @@ searchInputDOM.addEventListener("input", (e) => {
       console.log(sayi);
       btn15_sesi.play();
       btn15_sesi.currentTime = 0;
+      e.preventDefault();
+    });
+  }
+
+  if (btn16 != null) {
+    btn16.addEventListener("click", (e) => {
+      sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
+      console.log(sayi);
+      btn16_sesi.play();
+      btn16_sesi.currentTime = 0;
+      e.preventDefault();
+    });
+  }
+
+  if (btn17 != null) {
+    btn17.addEventListener("click", (e) => {
+      sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
+      console.log(sayi);
+      btn17_sesi.play();
+      btn17_sesi.currentTime = 0.6;
+      e.preventDefault();
+    });
+  }
+
+  if (btn18 != null) {
+    btn18.addEventListener("click", (e) => {
+      sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
+      console.log(sayi);
+      btn18_sesi.play();
+      btn18_sesi.currentTime = 0;
+      e.preventDefault();
+    });
+  }
+
+  if (btn19 != null) {
+    btn19.addEventListener("click", (e) => {
+      sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
+      console.log(sayi);
+      btn19_sesi.play();
+      btn19_sesi.currentTime = 0;
+      e.preventDefault();
+    });
+  }
+
+  if (btn20 != null) {
+    btn20.addEventListener("click", (e) => {
+      sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
+      console.log(sayi);
+      btn20_sesi.play();
+      btn20_sesi.currentTime = 0;
+      e.preventDefault();
+    });
+  }
+
+  if (btn21 != null) {
+    btn21.addEventListener("click", (e) => {
+      sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
+      console.log(sayi);
+      btn21_sesi.play();
+      btn21_sesi.currentTime = 0;
       e.preventDefault();
     });
   }
@@ -380,6 +509,12 @@ var btn13 = document.querySelector("#btn13");
 
 const btn14 = document.querySelector("#btn14");
 const btn15 = document.querySelector("#btn15");
+const btn16 = document.querySelector("#btn16");
+const btn17 = document.querySelector("#btn17");
+const btn18 = document.querySelector("#btn18");
+const btn19 = document.querySelector("#btn19");
+const btn20 = document.querySelector("#btn20");
+const btn21 = document.querySelector("#btn21");
 
 /* localStorage.setItem("clicksayac","0")
 let sayac = localStorage.getItem("clicksayac") //! click sayacın değeri
@@ -550,6 +685,66 @@ btn15.addEventListener("click", (e) => {
   console.log(sayi);
   btn15_sesi.play();
   btn15_sesi.currentTime = 0;
+});
+
+btn16.addEventListener("click", (e) => {
+  sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
+  console.log(sayi);
+  btn16_sesi.play();
+  btn16_sesi.currentTime = 0;
+});
+
+btn17.addEventListener("click", (e) => {
+  sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
+  console.log(sayi);
+  btn17_sesi.play();
+  btn17_sesi.currentTime = 0.6;
+});
+
+btn18.addEventListener("click", (e) => {
+  sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
+  console.log(sayi);
+  btn18_sesi.play();
+  btn18_sesi.currentTime = 0;
+});
+
+btn19.addEventListener("click", (e) => {
+  sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
+  console.log(sayi);
+  btn19_sesi.play();
+  btn19_sesi.currentTime = 0;
+});
+
+btn20.addEventListener("click", (e) => {
+  sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
+  console.log(sayi);
+  btn20_sesi.play();
+  btn20_sesi.currentTime = 0;
+});
+
+btn21.addEventListener("click", (e) => {
+  sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
+  console.log(sayi);
+  btn21_sesi.play();
+  btn21_sesi.currentTime = 0;
 });
 
 
