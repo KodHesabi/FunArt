@@ -8,24 +8,25 @@ var itemler = [
     id: "btn1",
   },
   { type: "item2", name: "tatakae tatakae", img: "resim/eren.jpg", id: "btn2" },
+
   { type: "item3", name: "nee sama", img: "resim/rem.jpg", id: "btn3" },
   {
     type: "item4",
-    name: "gambare gambare",
-    img: "resim/sukuna01.jpg",
+    name: "baka baka bakaa",
+    img: "resim/bakaa/images.jpg",
     id: "btn4",
   },
   { type: "item5", name: "okawai koto", img: "resim/kaguya03.jpg", id: "btn5" },
   {
     type: "item6",
-    name: "yare yare",
-    img: "resim/gojo-maceraları.jpg",
+    name: "ayayaa ayayaa",
+    img: "resim/ayayya/ayaya-yeah1.gif",
     id: "btn6",
   },
   {
     type: "item7",
-    name: "tabii efendim!",
-    img: "resim/spiderman.jpg",
+    name: "Gambare Gabimaru",
+    img: "resim/gabimaru.jpg",
     id: "btn7",
   },
   {
@@ -50,8 +51,8 @@ var itemler = [
   { type: "item12", name: "naniii", img: "resim/nani.jpg", id: "btn12" },
   {
     type: "item13",
-    name: "ayayaa ayayaa",
-    img: "resim/ayaya-ayaya.jpg",
+    name: "yare yare",
+    img: "resim/gojo-maceraları.jpg",
     id: "btn13",
   },
   {
@@ -76,8 +77,8 @@ var itemler = [
 
   {
     type: "item17",
-    name: "Gambare Gabimaru",
-    img: "resim/gabimaru.jpg",
+    name: "tabii efendim!",
+    img: "resim/spiderman.jpg",
     id: "btn17",
   },
 
@@ -90,8 +91,8 @@ var itemler = [
 
   {
     type: "item19",
-    name: "baka baka bakaa",
-    img: "resim/bakaa/images.jpg",
+    name: "gambare gambare",
+    img: "resim/sukuna01.jpg",
     id: "btn19",
   },
 
@@ -277,7 +278,7 @@ searchInputDOM.addEventListener("input", (e) => {
       localStorage.setItem("clicksayac",sayi)
       console.log(sayi);
       btn5_sesi.play();
-      btn5_sesi.currentTime = 0;
+      btn5_sesi.currentTime = 0.3;
     });
   }
 
@@ -301,7 +302,7 @@ searchInputDOM.addEventListener("input", (e) => {
   localStorage.setItem("clicksayac",sayi)
       console.log(sayi);
       btn7_sesi.play();
-      btn7_sesi.currentTime = 0;
+      btn7_sesi.currentTime = 0.6;
     });
   }
 
@@ -337,7 +338,7 @@ searchInputDOM.addEventListener("input", (e) => {
   localStorage.setItem("clicksayac",sayi)
       console.log(sayi);
       btn10_sesi.play();
-      btn10_sesi.currentTime = 0;
+      btn10_sesi.currentTime = 0.7;
     });
   }
 
@@ -426,7 +427,7 @@ searchInputDOM.addEventListener("input", (e) => {
   localStorage.setItem("clicksayac",sayi)
       console.log(sayi);
       btn17_sesi.play();
-      btn17_sesi.currentTime = 0.6;
+      btn17_sesi.currentTime = 0;
       e.preventDefault();
     });
   }
@@ -452,7 +453,7 @@ searchInputDOM.addEventListener("input", (e) => {
   localStorage.setItem("clicksayac",sayi)
       console.log(sayi);
       btn19_sesi.play();
-      btn19_sesi.currentTime = 0;
+      btn19_sesi.currentTime = 0.3;
       e.preventDefault();
     });
   }
@@ -584,7 +585,7 @@ btn5.addEventListener("click", (e) => {
   localStorage.setItem("clicksayac",sayi)
   console.log(sayi);
   btn5_sesi.play();
-  btn5_sesi.currentTime = 0;
+  btn5_sesi.currentTime = 0.2;
 });
 
 btn6.addEventListener("click", (e) => {
@@ -604,7 +605,7 @@ btn7.addEventListener("click", (e) => {
   localStorage.setItem("clicksayac",sayi)
   console.log(sayi);
   btn7_sesi.play();
-  btn7_sesi.currentTime = 0;
+  btn7_sesi.currentTime = 0.6;
 });
 
 btn8.addEventListener("click", (e) => {
@@ -634,7 +635,7 @@ btn10.addEventListener("click", (e) => {
   localStorage.setItem("clicksayac",sayi)
   console.log(sayi);
   btn10_sesi.play();
-  btn10_sesi.currentTime = 0;
+  btn10_sesi.currentTime = 0.7;
 });
 
 btn11.addEventListener("click", (e) => {
@@ -704,7 +705,7 @@ btn17.addEventListener("click", (e) => {
   localStorage.setItem("clicksayac",sayi)
   console.log(sayi);
   btn17_sesi.play();
-  btn17_sesi.currentTime = 0.6;
+  btn17_sesi.currentTime = 0;
 });
 
 btn18.addEventListener("click", (e) => {
@@ -724,7 +725,7 @@ btn19.addEventListener("click", (e) => {
   localStorage.setItem("clicksayac",sayi)
   console.log(sayi);
   btn19_sesi.play();
-  btn19_sesi.currentTime = 0;
+  btn19_sesi.currentTime = 0.3;
 });
 
 btn20.addEventListener("click", (e) => {
