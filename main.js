@@ -7,34 +7,54 @@ var itemler = [
     img: "resim/meliodas.jpg",
     id: "btn1",
   },
-  { type: "item2", name: "tatakae tatakae", img: "resim/eren.jpg", id: "btn2" },
 
-  { type: "item3", name: "nee sama", img: "resim/rem.jpg", id: "btn3" },
+  { type: "item2",
+    name: "tatakae tatakae", 
+    img: "resim/eren.jpg", 
+    id: "btn2", 
+  },
+
+  { type: "item3",
+    name: "I say discoo", 
+    img: "resim/shinobigif.gif" ,
+    id: "btn3", 
+  },
+
+
   {
     type: "item4",
     name: "baka baka bakaa",
     img: "resim/bakaa/images.jpg",
     id: "btn4",
   },
-  { type: "item5", name: "okawai koto", img: "resim/kaguya03.jpg", id: "btn5" },
+
+  { type: "item5", 
+    name: "okawai koto", 
+    img: "resim/kaguya03.jpg", 
+    id: "btn5" ,
+  },
+
   {
     type: "item6",
     name: "ayayaa ayayaa",
     img: "resim/ayayya/ayaya-yeah1.gif",
     id: "btn6",
   },
+
   {
     type: "item7",
     name: "Gambare Gabimaru",
     img: "resim/gabimaru.jpg",
     id: "btn7",
   },
+
   {
     type: "item8",
     name: "ara sayanoraa",
     img: "resim/ara-sayanora.jpg",
     id: "btn8",
   },
+
   { type: "item9", name: "ara araa", img: "resim/akeno-ara2.jpg", id: "btn9" },
   {
     type: "item10",
@@ -42,12 +62,14 @@ var itemler = [
     img: "resim/sukuna2.jpg",
     id: "btn10",
   },
+
   {
     type: "item11",
     name: "omae wa mou shindeiru",
     img: "resim/omae-wa.jpg",
     id: "btn11",
   },
+
   { type: "item12", name: "naniii", img: "resim/nani.jpg", id: "btn12" },
   {
     type: "item13",
@@ -55,12 +77,14 @@ var itemler = [
     img: "resim/gojo-maceraları.jpg",
     id: "btn13",
   },
+
   {
     type: "item14",
     name: "moshi moshii",
     img: "resim/moshi-moshi.jpg",
     id: "btn14",
   },
+
   {
     type: "item15",
     name: "ram and rem",
@@ -108,6 +132,17 @@ var itemler = [
     name: "like a baka",
     img: "resim/bakaa/like-a-baka.jpg",
     id: "btn21",
+  },
+
+  {
+    type: "item22",
+    name: "ya metee kudasai",
+    img: "resim/maxresdefault.jpg",
+    id: "btn22",
+  },
+
+  {
+    type: "item23", name: "nee sama", img: "resim/rem.jpg", id: "btn23"
   },
 
   
@@ -215,6 +250,8 @@ searchInputDOM.addEventListener("input", (e) => {
   const btn19 = document.querySelector("#btn19");
   const btn20 = document.querySelector("#btn20");
   const btn21 = document.querySelector("#btn21");
+  const btn22 = document.querySelector("#btn22");
+  const btn23 = document.querySelector("#btn23");
   /* localStorage.setItem("clicksayac","0") */
 
 
@@ -230,7 +267,6 @@ searchInputDOM.addEventListener("input", (e) => {
     });
   }
 
-
   if (btn2 != null) {
     btn2.addEventListener("click", (e) => {
       sayitut.innerHTML = localStorage.getItem("clicksayac")
@@ -243,7 +279,6 @@ searchInputDOM.addEventListener("input", (e) => {
     });
   }
 
-
   if (btn3 != null) {
     btn3.addEventListener("click", (e) => {
       sayitut.innerHTML = localStorage.getItem("clicksayac")
@@ -253,10 +288,53 @@ searchInputDOM.addEventListener("input", (e) => {
       console.log(sayi);
       btn3_sesi.play();
       btn3_sesi.currentTime = 0;
+
+      setTimeout(()=> {
+        let itemImage0Element = document.querySelector(".item-image0");
+        itemImage0Element.style.opacity = 0;
+    
+      // "item-image1" sınıfına sahip öğenin görünürlüğünü 1 yap
+        let itemImage1Element = document.querySelector(".item-image1");
+        itemImage1Element.style.opacity = 1;
+    
+        let itemImage2Element = document.querySelector(".item-image2");
+        itemImage2Element.style.opacity = 0;
+    
+    
+      },4500)
+      
+      setTimeout(() => {
+    
+        let itemImage0Element = document.querySelector(".item-image0");
+        itemImage0Element.style.opacity = 0;
+    
+      // "item-image1" sınıfına sahip öğenin görünürlüğünü 1 yap
+        let itemImage1Element = document.querySelector(".item-image1");
+        itemImage1Element.style.opacity = 0;
+    
+        let itemImage2Element = document.querySelector(".item-image2");
+        itemImage2Element.style.opacity = 1;
+    
+        
+      }, 8000);
+    
+      setTimeout(() => {
+    
+        let itemImage0Element = document.querySelector(".item-image0");
+        itemImage0Element.style.opacity = 1;
+    
+      // "item-image1" sınıfına sahip öğenin görünürlüğünü 1 yap
+        let itemImage1Element = document.querySelector(".item-image1");
+        itemImage1Element.style.opacity = 0;
+    
+        let itemImage2Element = document.querySelector(".item-image2");
+        itemImage2Element.style.opacity = 0;
+    
+        
+      }, 12000);
     });
   }
 
- 
 
   if (btn4 != null) {
     btn4.addEventListener("click", (e) => {
@@ -484,6 +562,32 @@ searchInputDOM.addEventListener("input", (e) => {
     });
   }
 
+  if (btn22 != null) {
+    btn22.addEventListener("click", (e) => {
+      sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
+      console.log(sayi);
+      btn22_sesi.play();
+      btn22_sesi.currentTime = 0;
+      e.preventDefault();
+    });
+  }
+
+  if (btn23 != null) {
+    btn23.addEventListener("click", (e) => {
+      sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
+      console.log(sayi);
+      btn23_sesi.play();
+      btn23_sesi.currentTime = 0;
+      e.preventDefault();
+    });
+  }
+
 
 });
 
@@ -516,7 +620,8 @@ const btn18 = document.querySelector("#btn18");
 const btn19 = document.querySelector("#btn19");
 const btn20 = document.querySelector("#btn20");
 const btn21 = document.querySelector("#btn21");
-
+const btn22 = document.querySelector("#btn22");
+const btn23 = document.querySelector("#btn23");
 /* localStorage.setItem("clicksayac","0")
 let sayac = localStorage.getItem("clicksayac") //! click sayacın değeri
 console.log(sayac) */
@@ -566,7 +671,54 @@ btn3.addEventListener("click", (e) => {
   console.log(sayi);
   btn3_sesi.play();
   btn3_sesi.currentTime = 0;
+  
+  setTimeout(()=> {
+    let itemImage0Element = document.querySelector(".item-image0");
+    itemImage0Element.style.opacity = 0;
+
+  // "item-image1" sınıfına sahip öğenin görünürlüğünü 1 yap
+    let itemImage1Element = document.querySelector(".item-image1");
+    itemImage1Element.style.opacity = 1;
+
+    let itemImage2Element = document.querySelector(".item-image2");
+    itemImage2Element.style.opacity = 0;
+
+
+  },4500)
+  
+  setTimeout(() => {
+
+    let itemImage0Element = document.querySelector(".item-image0");
+    itemImage0Element.style.opacity = 0;
+
+  // "item-image1" sınıfına sahip öğenin görünürlüğünü 1 yap
+    let itemImage1Element = document.querySelector(".item-image1");
+    itemImage1Element.style.opacity = 0;
+
+    let itemImage2Element = document.querySelector(".item-image2");
+    itemImage2Element.style.opacity = 1;
+
+    
+  }, 8000);
+
+  setTimeout(() => {
+
+    let itemImage0Element = document.querySelector(".item-image0");
+    itemImage0Element.style.opacity = 1;
+
+  // "item-image1" sınıfına sahip öğenin görünürlüğünü 1 yap
+    let itemImage1Element = document.querySelector(".item-image1");
+    itemImage1Element.style.opacity = 0;
+
+    let itemImage2Element = document.querySelector(".item-image2");
+    itemImage2Element.style.opacity = 0;
+
+    
+  }, 12000);
+  
+
 });
+
 
 btn4.addEventListener("click", (e) => {
   sayitut.innerHTML = localStorage.getItem("clicksayac")
@@ -748,6 +900,44 @@ btn21.addEventListener("click", (e) => {
   btn21_sesi.currentTime = 0;
 });
 
+btn22.addEventListener("click", (e) => {
+  sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
+  console.log(sayi);
+  btn22_sesi.play();
+  btn22_sesi.currentTime = 0;
+
+  let itemImage3Element = document.querySelector(".item-image3");
+  itemImage3Element.style.opacity=0;
+
+  let itemImage4Element = document.querySelector(".item-image4");
+  itemImage4Element.style.opacity=1;
+
+  setTimeout(() => {
+    let itemImage3Element = document.querySelector(".item-image3");
+  itemImage3Element.style.opacity=1;
+
+  let itemImage4Element = document.querySelector(".item-image4");
+  itemImage4Element.style.opacity=0;
+    
+  }, 3500);
+
+});
+
+btn23.addEventListener("click", (e) => {
+  sayitut.innerHTML = localStorage.getItem("clicksayac")
+  let sayi = localStorage.getItem("clicksayac")
+  ++sayi;
+  localStorage.setItem("clicksayac",sayi)
+  console.log(sayi);
+  btn23_sesi.play();
+  btn23_sesi.currentTime = 0;
+});
+
+
+
 
 
 
@@ -790,4 +980,53 @@ result.push(data5.innerHTML)
 
 
 data.push(result)
+
+  //! Birinci set Time
+  setTimeout(() => {
+    let itemImage0Elements = document.getElementsByClassName("item-image0");
+  for (let i = 0; i < itemImage0Elements.length; i++) {
+    itemImage0Elements[i].style.opacity = 0;
+  }
+
+  // Tüm "item-image1" sınıfına sahip öğelerin görünürlüğünü 1 yap
+  let itemImage1Elements = document.getElementsByClassName("item-image1");
+  for (let i = 0; i < itemImage1Elements.length; i++) {
+    itemImage1Elements[i].style.opacity = 1;
+  }
+  let itemImage2Elements = document.getElementsByClassName("item-image2");
+  for (let i = 0; i < itemImage2Elements.length; i++)
+    {
+      itemImage2Elements[i].style.opacity=0;
+    }
+
+  }, 4500);
+
+
+  //? 2. SetTime
+  setTimeout(() => {
+    let itemImage0Elements = document.getElementsByClassName("item-image0");
+  for (let i = 0; i < itemImage0Elements.length; i++) {
+    itemImage0Elements[i].style.opacity = 0;
+  }
+
+  // Tüm "item-image1" sınıfına sahip öğelerin görünürlüğünü 1 yap
+  let itemImage1Elements = document.getElementsByClassName("item-image1");
+  for (let i = 0; i < itemImage1Elements.length; i++) {
+    itemImage1Elements[i].style.opacity = 0;
+  }
+  let itemImage2Elements = document.getElementsByClassName("item-image2");
+  for (let i = 0; i < itemImage2Elements.length; i++)
+    {
+      itemImage2Elements[i].style.opacity=1;
+    }
+
+
+  },8000);
+
+  //! 3. Settime 
+  let itemImage0Elements = document.getElementsByClassName("item-image0");
+  for (let i= 0; i< itemImage0Elements.length; i++)
+  {
+    itemImage0Elements[i].style.opacity=1;
+  }
 */
